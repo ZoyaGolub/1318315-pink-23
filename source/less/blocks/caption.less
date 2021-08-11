@@ -11,6 +11,7 @@
   font-size: 24px;
   line-height: 120%;
   text-align: center;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     font-size: 40px;
@@ -20,4 +21,30 @@
     font-size: 50px;
     line-height: 68px;
   }
+}
+
+.caption__links-group {
+  background-color: @dark-blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+  @media (max-width: @mobail-width-only) {
+    order: 3;
+  }
+}
+
+.caption__link {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.caption__description {
+  color: @white;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
 }
