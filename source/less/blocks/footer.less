@@ -14,17 +14,12 @@
 }
 
 .footer--box {
-  margin: 0 auto;
   padding: 0 20px;
-  //width: 280px;
-
-  @media (min-width: @tablet-width) {
-    //width: 620px;
-  }
+  margin: 0;
+  width: auto;
 
   @media (min-width: @desktop-width) {
     padding: 0 130px;
-    //width: 940px;
   }
 }
 
@@ -54,10 +49,7 @@
   height: 48px;
   border-radius: 50%;
   background-color: @white;
-  border: 3px solid @black-light;
-}
-
-.footer__social-button--box {
+  border: 3px solid @black-opacity;
   display: flex;
   justify-content: center;
   align-items: center;

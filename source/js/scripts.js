@@ -2,6 +2,19 @@ const menuNav = document.querySelector('.header__navigation-list');
 const toggle = document.querySelector('.header__toggle');
 const header = document.querySelector('.header__menu');
 
+const popupRequest = document.querySelector(".form__button-send--popup");
+const popupError = document.querySelector(".popup--error");
+const popupSucces = document.querySelector(".popup--succes");
+const popupErrorClose = document.querySelector(".popup__js-error-button");
+const popupSuccesClose = document.querySelector(".popup__js-succes-button");
+const popupForm = document.querySelector(".form");
+const popupSurname = document.querySelector(".form__surname");
+const popupName = document.querySelector(".form__name-name");
+const popupPatronymic = document.querySelector(".form__patronymic");
+const popupEmail = document.querySelector(".form__email");
+
+let isStorageSupport = true;
+let storage = "";
 
 toggle.addEventListener('click', function() {
   if (toggle.classList.contains('header__toggle--for-open')) {
@@ -16,5 +29,77 @@ toggle.addEventListener('click', function() {
     menuNav.classList.remove('header__navigation-list-no-js');
     menuNav.classList.add('header__navigation-list');
     header.classList.remove('header__menu-no-js');
+  }
+});
+
+try {
+  storage = localStorage.getItem("surname");
+  storage = localStorage.getItem("name");
+  storage = localStorage.getItem("email");
+} catch (err) {
+  isStorageSupport = false;
+};
+
+popupRequest.addEventListener("click", function () {
+  popupError.classList.add("popup--show");
+
+  if (storage) {
+    popupSurname.value = storage;
+    popupName.focus();
+  } else {
+    popupSurname.focus();
+    if (storage) {
+      popupName.value = storage;
+      popupEmail.focus();
+    } else {
+      popupName.focus();
+      if (storage) {
+        popupEmail.value = storage;
+        popupPatronymic.focus();
+      } else {
+        popupEmail.focus();
+      }
+    }
+  }
+
+  popupSurname.focus();
+});
+
+popupSuccesClose.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  popupSucces.classList.remove("popup--show");
+});
+
+popupErrorClose.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  popupError.classList.remove("popup--show");
+});
+
+popupForm.addEventListener("submit", function (evt) {
+  if (!popupSurname.value || !popupName.value || !popupEmail.value) {
+    evt.preventDefault();
+    popupSucces.classList.add("popup--show");
+    popupError.classList.remove("popup--show");
+  } else {
+    evt.preventDefault();
+    popupError.classList.add("popup--show");
+  }
+});
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    if (popupError.classList.contains("popup--show")) {
+      evt.preventDefault();
+      popupError.classList.remove("popup--show");
+    }
+  }
+});
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    if (popupSucces.classList.contains("popup--show")) {
+      evt.preventDefault();
+      popupSucces.classList.remove("popup--show");
+    }
   }
 });
