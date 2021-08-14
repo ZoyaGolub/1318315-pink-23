@@ -7,6 +7,16 @@
   line-height: 120%;
   text-align: center;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 40px;
+    line-height: 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
 }
 
 .offers__box-offers {
@@ -14,5 +24,29 @@
 
   @media (min-width: @desktop-width) {
     padding: 0 130px;
+  }
+}
+
+.offers__first {
+  @media (max-width: @mobail-width-only) {
+    width: 250px;
+    margin: 24px auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.offers__second {
+  width: 250px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 575px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 700px;
   }
 }

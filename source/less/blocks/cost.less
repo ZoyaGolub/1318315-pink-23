@@ -8,7 +8,7 @@
   }
 }
 
-.cost__box {
+.cost__box-table {
   padding-top: 100px;
   padding-bottom: 45px;
 
@@ -49,6 +49,26 @@
   }
 }
 
+.cost__tarif-item--box-base {
+  border-radius: 1px 0 0 0;
+}
+
+.cost__tarif-item--box-unlim {
+  border-radius: 0 1px 0 0;
+}
+
+.cost__tarif-item--box-standard {
+  position: relative;
+}
+
+.cost__tarif-item-tarif-name {
+  margin-bottom: 0;
+
+  @media (max-width: @mobail-width-only) {
+    margin-top: 19px;
+  }
+}
+
 .cost__tarif-name {
   color: @white;
   font-weight: bold;
@@ -61,6 +81,14 @@
   }
 }
 
+.cost__tarif-item-price {
+  margin-top: 0;
+
+  @media (max-width: @mobail-width-only) {
+    margin-bottom: 35px;
+  }
+}
+
 .cost__price {
   color: @white;
   font-weight: 300;
@@ -70,6 +98,14 @@
 
   @media (min-width: @desktop-width) {
     font-size: 24px;
+  }
+}
+
+.cost__box-services-list-item {
+  background-color: @white;
+
+  @media (min-width: @tablet-width) {
+    padding: 17px 15px;
   }
 }
 
@@ -94,10 +130,44 @@
   }
 }
 
+.cost__box-services-list-yes-no {
+  background-color: @white;
+
+  @media (max-width: @mobail-width-only) {
+    display: table-cell;
+    height: 59px;
+    padding: 0 20px;
+    position: relative;
+  }
+}
+
+.cost__box-services-yes-no-choice {
+  @media (max-width: @mobail-width-only) {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 10% 40%;
+  }
+}
+
 .cost__box-slider {
-  padding: 0 20px;
+  padding: 0 20px 40px;
+  background-color: @grey;
 
   @media (min-width: @desktop-width) {
     padding: 0 130px;
   }
 }
+
+.cost__slider {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+// .cost__tarif-item--dislpay-none // Использую или нет?????
+// .cost__tarif-name-none // Использую или нет?????
+// .cost__price-none // Использую или нет?????

@@ -1,7 +1,12 @@
 // Contacts
 
+.contacts {
+  height: 395px;
+}
+
 .contacts__caption {
   padding: 0 20px;
+  margin: 70px auto 30px;
 
   @media (max-width: @desktop-width) {
     padding: 0 130px;
@@ -29,9 +34,16 @@
 
 .contacts__box-categories {
   padding: 0 20px;
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+  }
 
   @media (max-width: @desktop-width) {
     padding: 0 130px;
+    width: 940px;
   }
 }
 
@@ -90,6 +102,21 @@
   font-size: 24px;
   line-height: 33px;
   text-align: center;
+}
+
+.contacts__info--email {
+  &:focus {
+    color: @black-blue;
+  }
+
+  &:hover {
+    color: @black-blue;
+  }
+
+  &:active {
+    color: @black-blue;
+    opacity: 0.3;
+  }
 }
 
 .contacts__box-background {
