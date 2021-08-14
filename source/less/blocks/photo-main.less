@@ -1,0 +1,172 @@
+// Photo-main
+
+.photo-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.photo-main__hit {
+  color: @white;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.photo-main__img {
+  width: 100%;
+  height: 137px;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    height: 509px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 506px;
+  }
+}
+
+.photo-main__title {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.photo-main__box-hit-title {
+  background-color: @red;
+  width: 140px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin-right: 20px;
+  margin-top: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 130px;
+    margin-top: 45px;
+  }
+}
+
+.photo-main__description {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+}
+
+@media (min-width: @tablet-width) {
+  .photo-main__description {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content min-content;
+  }
+
+  .photo-main__caption {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .photo-main__text {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 2;
+    grid-row-end: -1;
+  }
+
+  .photo-main__like {
+    grid-column-start: 2;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-self: end;
+  }
+}
+
+.photo-main__box-description {
+  background-color: @grey;
+  height: min-content;
+  margin: 0 20px 20px;
+  padding: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 20px 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 auto 50px;
+    width: 900px;
+  }
+}
+
+.photo-main__caption {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+
+.photo-main__author {
+  color: @black-blue;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.photo-main__time {
+  color: @black-blue;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.photo-main__box-caption-time {
+  padding-left: 4px;
+}
+
+.photo-main__text {
+  color: @black-blue;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.photo-main__like {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.photo-main__box-description-like {
+  margin: 0;
+}
+
+.photo-main__like-img {
+  color: @red;
+  width: 13px;
+  height: 12px;
+}
+
+.photo-main__like-number {
+  color: @red;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.photo-main__box-like-like-number {
+  padding-left: 22px;
+}

@@ -1,0 +1,153 @@
+// Photo-other
+
+.photo-other {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.photo-other--box {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+  }
+}
+
+.pphoto-other__photo {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+  }
+}
+
+.photo-other__box-photo-img {
+  background-color: @grey-dark;
+}
+
+.pphoto-other__img {
+  width: 280px;
+  height: 180px;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    height: 300px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 300px;
+    height: 400px;
+  }
+}
+
+.photo-other__box-photo-description {
+  background-color: @grey;
+  width: 240px;
+  height: min-content;
+  margin: 0 0 20px;
+  padding: 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 260px;
+    height: 115px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 0 54px;
+  }
+}
+
+.photo-other__description {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+}
+
+.photo-other__caption {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.photo-other__author {
+  color: @black-blue;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.photo-other__box-caption-time {
+  padding-left: 4px;
+}
+
+.photo-other__time {
+  color: @black-blue;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.photo-other__text {
+  color: @black-blue;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.photo-other__like {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    justify-content: space-between;
+  }
+}
+
+.photo-other__box-description-like {
+  padding-top: 10px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+  }
+}
+
+.photo-other__like-img {
+  color: @red;
+  width: 13px;
+  height: 12px;
+}
+
+@media (min-width: @tablet-width) {
+  .photo-other__box-like-like-img {
+    order: 2;
+  }
+}
+
+.photo-other__like-number {
+  color: @red;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.photo-other__box-like-like-number {
+  padding-left: 22px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 0;
+  }
+}
