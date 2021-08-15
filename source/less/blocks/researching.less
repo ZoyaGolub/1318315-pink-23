@@ -1,0 +1,122 @@
+//Researching
+
+.researching {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10%;
+    padding: 0 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 130px;
+  }
+}
+
+.searchtion--box {
+  // background-color: @grey;
+}
+
+.researching__box-content {
+  height: 330px;
+  padding-top: 50px;
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 950px;
+  }
+}
+
+.researching__content {
+  @media (max-width: @mobail-width-only) {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10%;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.researching__img {
+  width: 238px;
+  height: 276px;
+  display: flex;
+  justify-self: center;
+}
+
+.researching__box-description {
+  @media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
+    margin-left: -30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 10%;
+  }
+}
+
+.researching__description {
+  @media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
+    width: 300px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 2;
+    grid-column-end: -1;
+  }
+}
+
+.researching__caption {
+  color: @black;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+
+  @media (min-width: @desktop-width) {
+    line-height: 30px;
+  }
+}
+
+.researching__box-description-text {
+  @media (min-width: @desktop-width) {
+    width: 534px;
+  }
+}
+
+.researching__text {
+  color: @black-blue;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.researching__link {
+  color: @red;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration: underline;
+}
