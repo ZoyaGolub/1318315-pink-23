@@ -6,9 +6,9 @@
 
 .contacts__caption {
   padding: 0 20px;
-  margin: 70px auto 30px;
+  margin: 41px auto 8px;
 
-  @media (max-width: @desktop-width) {
+  @media (min-width: @desktop-width) {
     padding: 0 130px;
   }
 }
@@ -41,7 +41,7 @@
     width: 620px;
   }
 
-  @media (max-width: @desktop-width) {
+  @media (min-width: @desktop-width) {
     padding: 0 130px;
     width: 940px;
   }
@@ -49,6 +49,7 @@
 
 .contacts__categories {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -61,8 +62,8 @@
 }
 
 .contacts__box-category {
-  width: 241px;
-  padding: 12px 30px 8px;
+  width: 219px;
+  padding: 4px 0 0;
   margin: 0 auto;
 }
 
@@ -123,13 +124,13 @@
   position: relative;
   z-index: 1;
   width: 100%;
+  height: 200px;
+  margin-top: 33px;
 }
 
 .contacts__background {
   display: flex;
   flex-direction: column;
-  height: 200px;
-  margin-top: 60px;
   background-image: url("../../img/map-mob.jpg");
   background-repeat: no-repeat;
   background-size: cover;

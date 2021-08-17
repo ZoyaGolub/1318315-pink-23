@@ -9,8 +9,8 @@
 }
 
 .cost__box-table {
-  padding-top: 100px;
-  padding-bottom: 45px;
+  padding-top: 136px;
+  padding-bottom: 39px;
 
   @media (min-width: @tablet-width) {
     padding-bottom: 70px;
@@ -62,10 +62,12 @@
 }
 
 .cost__tarif-item-tarif-name {
-  margin-bottom: 0;
-
   @media (max-width: @mobail-width-only) {
-    margin-top: 19px;
+    margin: 5px 0 -23px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -82,10 +84,12 @@
 }
 
 .cost__tarif-item-price {
-  margin-top: 0;
-
   @media (max-width: @mobail-width-only) {
-    margin-bottom: 35px;
+    margin-bottom: 21px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
   }
 }
 
@@ -98,6 +102,20 @@
 
   @media (min-width: @desktop-width) {
     font-size: 24px;
+  }
+}
+
+.cost__hit {
+  position: absolute;
+
+  @media (max-width: @tablet-width-only) {
+    top: -2px;
+    left: -4px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 14px;
+    left: 13px;
   }
 }
 
@@ -154,12 +172,14 @@
 }
 
 .cost__box-slider {
-  padding: 0 20px 40px;
+  width: 55px;
+  padding: 0 20px 47px;
+  margin: 0 auto;
   background-color: @grey;
 
-  @media (min-width: @desktop-width) {
-    padding: 0 130px;
-  }
+  // @media (min-width: @desktop-width) {
+  //   padding: 0 130px;
+  // }
 }
 
 .cost__slider {
