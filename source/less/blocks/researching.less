@@ -11,18 +11,18 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 10%;
-    padding: 0 20px;
   }
 
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 0 130px;
   }
 }
 
-.searchtion--box {
-  // background-color: @grey;
+.researching--box {
+  @media (min-width: @desktop-width) {
+    background-color: @grey;
+  }
 }
 
 .researching__box-content {
@@ -32,10 +32,12 @@
   @media (min-width: @tablet-width) {
     width: 620px;
     margin: 0 auto;
+    padding: 0 20px;
   }
 
   @media (min-width: @desktop-width) {
     width: 950px;
+    padding: 54px 130px 15px;
   }
 }
 
@@ -56,20 +58,41 @@
   }
 }
 
+.researching__box-content-img {
+  @media (min-width: @tablet-width) {
+    padding-right: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -66px;
+  }
+}
+
 .researching__img {
   width: 238px;
   height: 276px;
   display: flex;
   justify-self: center;
+
+  @media (min-width: @tablet-width) {
+    width: 235px;
+    height: 305px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 298px;
+    height: 345px;
+  }
 }
 
 .researching__box-description {
   @media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
     margin-left: -30px;
+    margin-top: 25px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 10%;
+    padding-left: 5%;
   }
 }
 
@@ -81,6 +104,13 @@
   @media (min-width: @desktop-width) {
     grid-column-start: 2;
     grid-column-end: -1;
+  }
+}
+
+.researching__box-description-caption {
+  @media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
+    width: 295px;
+    margin-bottom: 0;
   }
 }
 
@@ -96,8 +126,14 @@
 }
 
 .researching__box-description-text {
+  @media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
+    margin-top: 11px;
+    margin-bottom: 10px;
+  }
+
   @media (min-width: @desktop-width) {
     width: 534px;
+    margin-bottom: 31px;
   }
 }
 
@@ -119,4 +155,9 @@
   font-size: 14px;
   line-height: 24px;
   text-decoration: underline;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
