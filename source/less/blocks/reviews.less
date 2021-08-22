@@ -12,7 +12,6 @@
     grid-row-end: 2;
     grid-column-start: 1;
     grid-column-end: -1;
-    margin: 50px auto;
   }
 
   .reviews__arrow-slider-left {
@@ -38,10 +37,20 @@
 }
 
 .reviews--box {
-  padding: 0 20px;
+  padding: 42px 20px 0;
+  margin-top: -6px;
+  background-image: url("../../img/white-background-index-mob.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: -42px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/white-background-index-mob@2x.png");
+  }
 
   @media (min-width: @tablet-width) {
-    margin: 60px auto 0;
+    margin: 38px auto -10px;
     padding: 0;
   }
 
@@ -55,7 +64,7 @@
 
   @media (min-width: @desktop-width) {
     display: flex;
-    margin: 13px auto 50px;
+    margin: 76px auto 50px;
   }
 }
 
@@ -132,7 +141,7 @@
 
   @media (min-width: @desktop-width) {
     margin-top: 50px;
-    margin-bottom: 5px;
+    margin-bottom: 1px;
   }
 }
 

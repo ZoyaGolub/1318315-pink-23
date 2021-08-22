@@ -1,25 +1,27 @@
 //Researching
 
 .researching {
-  display: none;
-
-  @media (min-width: @tablet-width) {
-    display: block;
-  }
-
-  @media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 10%;
-  }
+  width: 100%;
 
   @media (min-width: @desktop-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+    z-index: 2;
   }
 }
 
 .researching--box {
+  @media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
+    background-image: url("../../img/white-background-index-tabl.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: -62px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/white-background-index-tabl@2x.png");
+    }
+  }
+
   @media (min-width: @desktop-width) {
     background-color: @grey;
   }
@@ -32,12 +34,13 @@
   @media (min-width: @tablet-width) {
     width: 620px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 41px 20px 0;
   }
 
   @media (min-width: @desktop-width) {
     width: 950px;
     padding: 54px 130px 15px;
+    margin: -87px auto 0;
   }
 }
 
@@ -133,7 +136,7 @@
 
   @media (min-width: @desktop-width) {
     width: 534px;
-    margin-bottom: 31px;
+    margin: -5px 0 29px;
   }
 }
 

@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="icon" href="./favicon.ico">
+    <link rel="icon" href="./img/favicon.svg" sizes="any" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./img/favicon-16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="preload" href="./fonts/opensans.woff2" as="font">
     <link rel="stylesheet" href="./css/style.css">
   </head>
@@ -74,9 +78,16 @@
             </ul>
             <p class="caption__box-links-description caption__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
           </div>
-          <img class="caption__hand-phone" src="./img/hand-phone-mob.png" width="320" height="286" alt="Мобильный телефон в вашей руке">
-          </div>
+          <picture>
+            <!-- <source type="image/webp" media="(min-width: 980px)" srcset="./img/hand-phone-desk.webp 1x, ./img/hand-phone-desk@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 640px)" srcset="./img/hand-phone-tabl.webp 1x, ./img/hand-phone-tabl@2x.webp 2x">
+            <source type="image/webp" srcset="./img/hand-phone-mob.webp 1x, ./img/hand-phone-mob@2x.webp 2x"> -->
+            <source media="(min-width: 980px)" srcset="./img/hand-phone-desk.png 1x, ./img/hand-phone-desk@2x.png 2x">
+            <source media="(min-width: 640px)" srcset="./img/hand-phone-tabl.png.png 1x, ./img/hand-phone-tabl@2x.png 2x">
+            <img class="caption__box-content-hand-phone caption__hand-phone" src="./img/hand-phone-mob.png" srcset="./img/hand-phone-mob@2x.png 2x" width="320" height="286" alt="Мобильный телефон в вашей руке">
+          </picture>
         </div>
+      </div>
       <div class="offers offers--box">
         <p class="offers__box-offers offers__first">Устали от серости мегаполиса?</p>
         <p class="offers__box-offers offers__second">Нам есть, что вам<br>предложить!</p>
@@ -98,13 +109,34 @@
         </ul>
         <ul class="effects__box-effects-img-list effects__img-list">
           <li class="effects__box-img-list-img-item effects__img-item effects__img-1">
-            <img class="effects__img-phone" src="./img/phone1-mob.png" width="157" height="320" alt="Мобильный телефон с изображением баков для мусора">
+            <picture>
+              <!-- <source type="image/webp" media="(min-width: 980px)" srcset="./img/phone1-desk.webp 1x, ./img/phone1-desk@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 640px)" srcset="./img/phone1-tabl.webp 1x, ./img/phone1-tabl@2x.webp 2x">
+              <source type="image/webp" srcset="./img/phone1-mob.webp 1x, ./img/phone1-mob@2x.webp 2x"> -->
+              <source media="(min-width: 980px)" srcset="./img/phone1-desk.png 1x, ./img/phone1-desk@2x.png 2x">
+              <source media="(min-width: 640px)" srcset="./img/phone1-tabl.png 1x, ./img/phone1-tabl@2x.png 2x">
+              <img class="effects__box-img-item-img-phone effects__img-phone" src="./img/phone1-mob.png" srcset="./img/phone1-mob@2x.png 2x" width="157" height="320" alt="Мобильный телефон с изображением баков для мусора">
+            </picture>
           </li>
           <li class="effects__box-img-list-img-item effects__img-item effects__img-2">
-            <img class="effects__img-phone" src="./img/phone2-mob.png" width="157" height="320" alt="Мобильный телефон с изображением баков для мусора, где на фотографию наложен малиновый фильтр">
+            <picture>
+              <!-- <source type="image/webp" media="(min-width: 980px)" srcset="./img/phone2-desk.webp 1x, ./img/phone2-desk@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 640px)" srcset="./img/phone2-tabl.webp 1x, ./img/phone2-tabl@2x.webp 2x">
+              <source type="image/webp" srcset="./img/phone2-mob.webp 1x, ./img/phone2-mob@2x.webp 2x"> -->
+              <source media="(min-width: 980px)" srcset="./img/phone2-desk.png 1x, ./img/phone2-desk@2x.png 2x">
+              <source media="(min-width: 640px)" srcset="./img/phone2-tabl.png 1x, ./img/phone2-tabl@2x.png 2x">
+              <img class="effects__box-img-item-img-phone effects__img-phone" src="./img/phone2-mob.png" srcset="./img/phone2-mob@2x.png 2x" width="157" height="320" alt="Мобильный телефон с изображением баков для мусора, где на фотографию наложен малиновый фильтр">
+            </picture>
           </li>
           <li class="effects__box-img-list-img-item effects__img-item effects__img-3">
-            <img class="effects__img-phone" src="./img/phone3-mob.png" width="157" height="320" alt="Мобильный телефон с изображением баков для мусора, где на фотографию наложен малиновый фильтр и украшена смайликом с подписью">
+            <picture>
+              <!-- <source type="image/webp" media="(min-width: 980px)" srcset="./img/phone3-desk.webp 1x, ./img/phone3-desk@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 640px)" srcset="./img/phone3-tabl.webp 1x, ./img/phone3-tabl@2x.webp 2x">
+              <source type="image/webp" srcset="./img/phone3-mob.webp 1x, ./img/phone3-mob@2x.webp 2x"> -->
+              <source media="(min-width: 980px)" srcset="./img/phone3-desk.png 1x, ./img/phone3-desk@2x.png 2x">
+              <source media="(min-width: 640px)" srcset="./img/phone3-tabl.png 1x, ./img/phone3-tabl@2x.png 2x">
+              <img class="effects__box-img-item-img-phone effects__img-phone" src="./img/phone3-mob.png" srcset="./img/phone3-mob@2x.png 2x" width="157" height="320" alt="Мобильный телефон с изображением баков для мусора, где на фотографию наложен малиновый фильтр и украшена смайликом с подписью">
+            </picture>
           </li>
         </ul>
       </div>
@@ -175,7 +207,14 @@
               <p class="cost__box-tarif-item-price cost__price">1,99 usd</p>
             </th>
             <th class="cost__tarif-item cost__tarif-item--box-standard cost__slide cost__slide--current">
-              <img class="cost__hit" src="./img/hit-mob.png" width="74" height="74" alt="Хит - самый популярный тариф">
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 980px)" srcset="./img/hit-desk.webp 1x, ./img/phone3-desk@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 640px)" srcset="./img/hit-tabl.webp 1x, ./img/phone3-tabl@2x.webp 2x">
+                <source type="image/webp" srcset="./img/hit-mob.webp 1x, ./img/hit-mob@2x.webp 2x"> -->
+                <source media="(min-width: 980px)" srcset="./img/hit-desk.png 1x, ./img/hit-desk@2x.png 2x">
+                <source media="(min-width: 640px)" srcset="./img/hit-tabl.png 1x, ./img/hit-tabl@2x.png 2x">
+                <img class="cost__hit" src="./img/hit-mob.png" srcset="./img/hit-mob@2x.png 2x" width="74" height="74" alt="Хит - самый популярный тариф">
+              </picture>
               <p class="cost__box-tarif-item-tarif-name cost__tarif-name">Стандарт</p>
               <p class="cost__box-tarif-item-price cost__price">3,99 usd</p>
             </th>
@@ -188,45 +227,108 @@
             <td class="cost__box-services-list-item cost__services-item cost__services-item--angle-top-left">Розовый фильтр</td>
             <td class="cost__box-services-list-yes-no cost__services-yes-no">
               <p class="cost__services-item cost__services-item--inside-text">Розовый фильтр</p>
-              <img class="cost__box-services-yes-no-choice cost__choice" src="./img/yes.png" width="31" height="21" alt="Розовый фильт входит в тариф База">
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 980px)" srcset="./img/yes.webp 1x, ./img/yes@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 640px)" srcset="./img/yes.webp 1x, ./img/yes@2x.webp 2x">
+                <source type="image/webp" srcset="./img/yes.webp 1x, ./img/yes@2x.webp 2x"> -->
+                <source media="(min-width: 980px)" srcset="./img/yes.png 1x, ./img/yes@2x.png 2x">
+                <source media="(min-width: 640px)" srcset="./img/yes.png 1x, ./img/yes@2x.png 2x">
+                <img class="cost__box-services-yes-no-choice cost__choice" src="./img/yes.png" srcset="./img/yes@2x.png 2x" width="31" height="21" alt="Розовый фильт входит в тариф База">
+              </picture>
             </td>
             <td class="cost__box-services-list-yes-no cost__services-yes-no">
               <p class="cost__services-item cost__services-item--inside-text">Розовый фильтр</p>
-              <img class="cost__box-services-yes-no-choice cost__choice" src="./img/yes.png" width="31" height="21" alt="Розовый фильт входит в тариф Стандарт">
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 980px)" srcset="./img/yes.webp 1x, ./img/yes@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 640px)" srcset="./img/yes.webp 1x, ./img/yes@2x.webp 2x">
+                <source type="image/webp" srcset="./img/yes.webp 1x, ./img/yes@2x.webp 2x"> -->
+                <source media="(min-width: 980px)" srcset="./img/yes.png 1x, ./img/yes@2x.png 2x">
+                <source media="(min-width: 640px)" srcset="./img/yes.png 1x, ./img/yes@2x.png 2x">
+                <img class="cost__box-services-yes-no-choice cost__choice" src="./img/yes.png" srcset="./img/yes@2x.png 2x" width="31" height="21" alt="Розовый фильт входит в тариф Стандарт">
+              </picture>
             </td>
             <td class="cost__box-services-list-yes-no cost__services-yes-no">
               <p class="cost__services-item cost__services-item--inside-text">Розовый фильтр</p>
-              <img class="cost__box-services-yes-no-choice cost__choice" src="./img/yes.png" width="31" height="21" alt="Розовый фильт входит в тариф Анлим">
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 980px)" srcset="./img/yes.webp 1x, ./img/yes@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 640px)" srcset="./img/yes.webp 1x, ./img/yes@2x.webp 2x">
+                <source type="image/webp" srcset="./img/yes.webp 1x, ./img/yes@2x.webp 2x"> -->
+                <source media="(min-width: 980px)" srcset="./img/yes.png 1x, ./img/yes@2x.png 2x">
+                <source media="(min-width: 640px)" srcset="./img/yes.png 1x, ./img/yes@2x.png 2x">
+                <img class="cost__box-services-yes-no-choice cost__choice" src="./img/yes.png" srcset="./img/yes@2x.png" width="31" height="21" alt="Розовый фильт входит в тариф Анлим">
+              </picture>
             </td>
           </tr>
           <tr class="cost__services-list">
             <td class="cost__box-services-list-item cost__services-item">Смайлики</td>
             <td class="cost__box-services-list-yes-no cost__services-yes-no">
               <p class="cost__services-item cost__services-item--inside-text">Смайлики</p>
-              <img class="cost__box-services-yes-no-choice cost__choice" src="./img/no.png" width="27" height="27" alt="Смайлики не входят в тариф База">
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 980px)" srcset="./img/no.webp 1x, ./img/no@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 640px)" srcset="./img/no.webp 1x, ./img/no@2x.webp 2x">
+                <source type="image/webp" srcset="./img/no.webp 1x, ./img/no@2x.webp 2x"> -->
+                <source media="(min-width: 980px)" srcset="./img/no.png 1x, ./img/no@2x.png 2x">
+                <source media="(min-width: 640px)" srcset="./img/no.png 1x, ./img/no@2x.png 2x">
+                <img class="cost__box-services-yes-no-choice cost__choice" src="./img/no.png" srcset="./img/no@2x.png" width="27" height="27" alt="Смайлики не входят в тариф База">
+              </picture>
             </td>
             <td class="cost__box-services-list-yes-no cost__services-yes-no">
               <p class="cost__services-item cost__services-item--inside-text">Смайлики</p>
-              <img class="cost__box-services-yes-no-choice cost__choice" src="./img/yes.png" width="31" height="21" alt="Смайлики входят в тариф Стандарт">
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 980px)" srcset="./img/yes.webp 1x, ./img/yes@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 640px)" srcset="./img/yes.webp 1x, ./img/yes@2x.webp 2x">
+                <source type="image/webp" srcset="./img/yes.webp 1x, ./img/yes@2x.webp 2x"> -->
+                <source media="(min-width: 980px)" srcset="./img/yes.png 1x, ./img/yes@2x.png 2x">
+                <source media="(min-width: 640px)" srcset="./img/yes.png 1x, ./img/yes@2x.png 2x">
+                <img class="cost__box-services-yes-no-choice cost__choice" src="./img/yes.png" srcset="./img/yes@2x.png" width="31" height="21" alt="Смайлики входят в тариф Стандарт">
+              </picture>
             </td>
             <td class="cost__box-services-list-yes-no cost__services-yes-no">
               <p class="cost__services-item cost__services-item--inside-text">Смайлики</p>
-              <img class="cost__box-services-yes-no-choice cost__choice" src="./img/yes.png" width="31" height="21" alt="Смайлики входят в тариф Анлим">
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 980px)" srcset="./img/yes.webp 1x, ./img/yes@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 640px)" srcset="./img/yes.webp 1x, ./img/yes@2x.webp 2x">
+                <source type="image/webp" srcset="./img/yes.webp 1x, ./img/yes@2x.webp 2x"> -->
+                <source media="(min-width: 980px)" srcset="./img/yes.png 1x, ./img/yes@2x.png 2x">
+                <source media="(min-width: 640px)" srcset="./img/yes.png 1x, ./img/yes@2x.png 2x">
+                <img class="cost__box-services-yes-no-choice cost__choice" src="./img/yes.png" srcset="./img/yes@2x.png" width="31" height="21" alt="Смайлики входят в тариф Анлим">
+              </picture>
             </td>
           </tr>
           <tr class="cost__services-list">
             <td class="cost__box-services-list-item cost__services-item cost__services-item--angle-bottom-left">Комментарии</td>
             <td class="cost__box-services-list-yes-no cost__services-yes-no">
               <p class="cost__services-item cost__services-item--inside-text">Комментарии</p>
-              <img class="cost__box-services-yes-no-choice cost__choice" src="./img/no.png" width="27" height="27" alt="Комментарии не входят в тариф База">
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 980px)" srcset="./img/no.webp 1x, ./img/no@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 640px)" srcset="./img/no.webp 1x, ./img/no@2x.webp 2x">
+                <source type="image/webp" srcset="./img/no.webp 1x, ./img/no@2x.webp 2x"> -->
+                <source media="(min-width: 980px)" srcset="./img/no.png 1x, ./img/no@2x.png 2x">
+                <source media="(min-width: 640px)" srcset="./img/no.png 1x, ./img/no@2x.png 2x">
+                <img class="cost__box-services-yes-no-choice cost__choice" src="./img/no.png" srcset="./img/no@2x.png" width="27" height="27" alt="Комментарии не входят в тариф База">
+              </picture>
             </td>
             <td class="cost__box-services-list-yes-no cost__services-yes-no">
               <p class="cost__services-item cost__services-item--inside-text">Комментарии</p>
-              <img class="cost__box-services-yes-no-choice cost__choice" src="./img/no.png" width="27" height="27" alt="Комментарии не входят в тариф Стандарт">
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 980px)" srcset="./img/no.webp 1x, ./img/no@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 640px)" srcset="./img/no.webp 1x, ./img/no@2x.webp 2x">
+                <source type="image/webp" srcset="./img/no.webp 1x, ./img/no@2x.webp 2x"> -->
+                <source media="(min-width: 980px)" srcset="./img/no.png 1x, ./img/no@2x.png 2x">
+                <source media="(min-width: 640px)" srcset="./img/no.png 1x, ./img/no@2x.png 2x">
+                <img class="cost__box-services-yes-no-choice cost__choice" src="./img/no.png" srcset="./img/no@2x.png" width="27" height="27" alt="Комментарии не входят в тариф Стандарт">
+              </picture>
             </td>
             <td class="cost__box-services-list-yes-no cost__services-yes-no">
               <p class="cost__services-item cost__services-item--inside-text">Комментарии</p>
-              <img class="cost__box-services-yes-no-choice cost__choice" src="./img/yes.png" width="31" height="21" alt="Комментарии входят в тариф Анлим">
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 980px)" srcset="./img/yes.webp 1x, ./img/yes@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 640px)" srcset="./img/yes.webp 1x, ./img/yes@2x.webp 2x">
+                <source type="image/webp" srcset="./img/yes.webp 1x, ./img/yes@2x.webp 2x"> -->
+                <source media="(min-width: 980px)" srcset="./img/yes.png 1x, ./img/yes@2x.png 2x">
+                <source media="(min-width: 640px)" srcset="./img/yes.png 1x, ./img/yes@2x.png 2x">
+`               <img class="cost__box-services-yes-no-choice cost__choice" src="./img/yes.png" srcset="./img/yes@2x.png" width="31" height="21" alt="Комментарии входят в тариф Анлим">
+              </picture>
             </td>
           </tr>
         </table>
@@ -260,6 +362,7 @@
           <div class="contacts__map">
             <iframe class="contacts__map-online" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533273!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2sua!4v1615991844580!5m2!1sen!2sua" width="320" height="200" style="border:0;" allowfullscreen="" loading="lazy" aria-label="Карта Санкт-Петербурга"></iframe>
           </div>
+          <div class="contacts__triangle"></div>
         </div>
       </div>
     </main>

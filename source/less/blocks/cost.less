@@ -3,24 +3,52 @@
 .cost {
   @media (max-width: @mobail-width-only) {
     width: 100%;
-    background-color: @grey;
+    // background-color: @grey;
     overflow: hidden;
   }
 }
 
-.cost__box-table {
-  padding-top: 136px;
-  padding-bottom: 39px;
+.cost--box {
+  background-image: url("../../img/grey-background-small-mob.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: -32px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/grey-background-small-mob@2x.png");
+  }
 
   @media (min-width: @tablet-width) {
-    padding-top: 110px;
-    padding-bottom: 70px;
+    background-image: url("../../img/grey-background-small-tabl.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/grey-background-small-tabl@2x.png");
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../../img/grey-background-small-desk.png");
+    top: -10px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/grey-background-small-desk@2x.png");
+    }
+  }
+}
+
+.cost__box-table {
+  padding: 126px 20px 392px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    padding: 110px 20px 52px;
     margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 186px;
-    padding-bottom: 98px;
+    padding: 165px 130px 75px;
+    margin: 0 auto;
   }
 }
 

@@ -3,13 +3,33 @@
 .caption {
   width: 100%;
   background-color: @black-blue;
+  background-image: url("../../img/house-background-mob.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% -103px;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/house-background-mob@2x.jpg");
+  }
 
   @media (min-width: @tablet-width) {
     height: 620px;
+    background-image: url("../../img/house-background-tabl.jpg");
+    background-position: 50% -106px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/house-background-tabl@2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
     height: 745px;
+    background-image: url("../../img/house-background-desk.jpg");
+    background-position: 50% -109px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/house-background-desk@2x.jpg");
+    }
   }
 }
 
@@ -44,7 +64,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 102px 0 40px 30px;
+    padding: 99px 0 40px 30px;
     margin-top: -7px;
   }
 }
@@ -85,6 +105,7 @@
 
   @media (min-width: @desktop-width) {
     top: 709px;
+    padding-left: 14px;
   }
 }
 
@@ -96,7 +117,7 @@
   align-items: center;
 
   @media (max-width: @mobail-width-only) {
-    background-color: transparent;
+    //background-color: transparent;
     order: 3;
   }
 }
@@ -112,6 +133,10 @@
   @media (min-width: @tablet-width) {
     width: 300px;
     padding: 14px 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 14px 27px;
   }
 
   &:focus {
@@ -135,6 +160,10 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
+
+  @media (min-width: @desktop-width) {
+    font-size: 21px;
+  }
 }
 
 .caption__icon-list {
@@ -179,5 +208,31 @@
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
+  }
+}
+
+.caption__box-content-hand-phone {
+  @media (min-width: @tablet-width) {
+    margin: 74px 0 0 -17px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 99px 0 0 15px;
+  }
+}
+
+.caption__hand-phone {
+  width: 320px;
+  height: 286px;
+  display: flex;
+
+  @media (min-width: @tablet-width) {
+    width: 660px;
+    height: 545px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1050px;
+    height: 645px;
   }
 }

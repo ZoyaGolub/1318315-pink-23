@@ -2,7 +2,7 @@
 
 .header {
   width: 100%;
-  margin: 0 auto;
+  //margin: 0 auto;
   background-color: @black-opacity;
 }
 
@@ -13,6 +13,8 @@
     justify-content: space-between;
     padding: 35px 130px 10px;
     height: min-content;
+    width: 940px;
+    margin: 0 auto;
   }
 }
 
@@ -112,6 +114,9 @@
   margin: 0;
   background-color: @black-blue;
   height: min-content;
+  position: absolute;
+  width: 100%;
+  z-index: 3;
 }
 
 .header__navigation-item {
@@ -119,7 +124,7 @@
 
   @media (max-width: @tablet-width-only) {
     margin: 0 auto;
-    padding: 18px 0;
+    padding: 16px 0;
     box-shadow: 0 1px 0 @black;
   }
 }
