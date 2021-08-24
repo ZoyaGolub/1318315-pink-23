@@ -16,7 +16,7 @@
   margin-left: 68px;
 
   @media (min-width: @tablet-width) {
-    margin-left: 104px;
+    margin-left: 118px;
   }
 
   @media (min-width: @desktop-width) {
@@ -34,6 +34,10 @@
   background-color: @white;
   border: 2px solid @grey-dark;
   cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    left: -60px;
+  }
 
   &:focus-visible {
     border-color: @black-blue;
@@ -69,6 +73,14 @@
     margin-left: 100px;
   }
 }
+
+
+.check__progress {
+  @media (min-width: @tablet-width) {
+    margin-left: 103px;
+  }
+ }
+
 
 .check__input-checkbox {
   position: absolute;
