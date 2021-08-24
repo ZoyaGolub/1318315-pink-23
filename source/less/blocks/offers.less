@@ -6,7 +6,6 @@
   font-size: 24px;
   line-height: 120%;
   text-align: center;
-  margin: 0;
 
   @media (min-width: @tablet-width) {
     font-size: 40px;
@@ -17,6 +16,10 @@
     font-size: 50px;
     line-height: 68px;
   }
+}
+
+.offers--box {
+  margin: 0;
 }
 
 .offers__box-offers {
@@ -30,11 +33,17 @@
 .offers__first {
   @media (max-width: @mobail-width-only) {
     width: 250px;
-    margin: 24px auto;
+    margin: 42px auto 30px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 96%;
+    margin: 45px auto 1px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 0;
+    width: 77%;
+    margin-top: 60px;
   }
 }
 
@@ -43,7 +52,7 @@
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    width: 575px;
+    width: 620px;
   }
 
   @media (min-width: @desktop-width) {

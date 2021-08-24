@@ -12,7 +12,6 @@
     grid-row-end: 2;
     grid-column-start: 1;
     grid-column-end: -1;
-    margin: 50px auto;
   }
 
   .reviews__arrow-slider-left {
@@ -37,8 +36,23 @@
   }
 }
 
-.reviews {
-  padding: 0 20px;
+.reviews--box {
+  padding: 42px 20px 0;
+  margin-top: -6px;
+  background-image: url("../../img/white-background-index-mob.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: -42px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/white-background-index-mob@2x.png");
+  }
+
+  @media (min-width: @tablet-width) {
+    margin: 38px auto -10px;
+    padding: 0;
+  }
 
   @media (min-width: @desktop-width) {
     padding: 0 130px;
@@ -50,6 +64,7 @@
 
   @media (min-width: @desktop-width) {
     display: flex;
+    margin: 76px auto 50px;
   }
 }
 
@@ -81,6 +96,12 @@
   }
 }
 
+.reviews__box-content {
+  @media (min-width: @tablet-width) {
+    width: 102%;
+  }
+}
+
 .reviews__content {
   display: flex;
   flex-direction: column;
@@ -101,17 +122,26 @@
 }
 
 .reviews__author {
-  @media (min-width: @tablet-width) {
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    order: 2;
+    width: inherit;
+  }
+
+  @media (min-width: @desktop-width) {
     order: 2;
   }
 }
 
 .reviews__box-author-name {
-  margin-bottom: 0;
+  margin: -1px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 36px;
+  }
 
   @media (min-width: @desktop-width) {
     margin-top: 50px;
-    margin-bottom: 5px;
+    margin-bottom: 1px;
   }
 }
 
@@ -153,8 +183,8 @@
 }
 
 .reviews__box-content-text {
-  margin-top: 0;
-  width: 265px;
+  margin-top: 12px;
+  width: 280px; //99%;
 
   @media (min-width: @tablet-width) {
     width: 95%;
@@ -162,7 +192,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 75%;
+    width: 80%;
+    margin-bottom: -13px;
   }
 }
 
@@ -179,11 +210,11 @@
 }
 
 .reviews__box-content-slider {
-  margin-top: 30px;
-}
+  margin-top: 16px;
+  width: 65px;
 
-.reviews__slider {
-  @media (min-width: @desktop-width) {
-    display: none;
+  @media (min-width: @tablet-width) {
+    margin-top: 36px;
+    width: 49px;
   }
 }

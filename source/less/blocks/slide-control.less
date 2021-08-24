@@ -2,6 +2,12 @@
 
 .slide-control {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
 .slide-control__button {
