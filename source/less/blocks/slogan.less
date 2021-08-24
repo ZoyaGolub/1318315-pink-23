@@ -3,20 +3,30 @@
 .slogan__box {
   width: 100%;
   background-color: @black-blue;
-  // background-image: url("../img/house-background-mob.jpg");
-  // background-repeat: no-repeat;
-  // background-position: 50% -9px;
-  // background-size: cover;
+  background-image: url("../../img/house-background-mob.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% -67px;
 
-  // @media (min-width: @tablet-width) {
-  //   background-image: url("../img/house-background-tabl.jpg");
-  // }
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/house-background-mob@2x.jpg");
+  }
 
-  // @media (min-width: @desktop-width) {
-  //   background-image: url("../img/house-background-desk.jpg");
-  //   position: absolute;
-  //   top: 0;
-  // }
+  @media (min-width: @tablet-width) {
+    background-image: url("../../img/house-background-tabl.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/house-background-tabl@2x.jpg");
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../../img/house-background-desk.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/house-background-desk@2x.jpg");
+    }
+  }
 }
 
 .slogan__speech-header {
@@ -57,7 +67,7 @@
 .slogan__box-contest-speech-header {
   width: 250px;
   margin: 0 auto;
-  padding: 35px 20px 50px;
+  padding: 26px 20px 44px;
 
   @media (min-width: @tablet-width) {
     width: 600px;
@@ -71,8 +81,8 @@
 }
 
 .slogan__box-contest-speech-offer {
-  margin: 70px auto 30px;
-  width: 290px;
+  margin: 45px auto 30px;
+  width: 280px;
   padding: 0 20px;
 
   @media (min-width: @tablet-width) {
