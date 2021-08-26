@@ -6,7 +6,7 @@
   background-image: url("../../img/house-background-mob.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 50% -67px;
+  background-position: 50% 0;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../../img/house-background-mob@2x.jpg");
@@ -14,7 +14,6 @@
 
   @media (min-width: @tablet-width) {
     background-image: url("../../img/house-background-tabl.jpg");
-    background-position: 50% -109px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/house-background-tabl@2x.jpg");
@@ -43,6 +42,28 @@
   }
 }
 
+.slogan__box-offer {
+  width: 100%;
+  height: 110px;
+  background-image: url("data:image/svg+xml,%3Csvg width='320' height='563' viewBox='0 0 320 563' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='320' height='563' fill='white'/%3E%3C/svg%3E");
+  position: relative;
+  //top: -200px;
+
+  @media (min-width: @tablet-width) {
+    top: -150px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: -100px;
+  }
+}
+
+.slogan__box-offer--contest {
+  top: -61px;
+}
+
+//.slogan__box-offer--photos
+
 .slogan__speech-offer {
   color: @black-blue;
   font-weight: normal;
@@ -68,31 +89,36 @@
 .slogan__box-contest-speech-header {
   width: 250px;
   margin: 0 auto;
-  padding: 26px 20px 44px;
+  padding: 95px 20px 59px;
 
   @media (min-width: @tablet-width) {
     width: 600px;
-    padding: 67px 20px 59px;
+    padding: 176px 20px 59px;
   }
 
   @media (min-width: @desktop-width) {
     width: 780px;
-    padding: 60px 130px 89px;
+    padding: 168px 130px 89px;
   }
 }
 
-.slogan__box-contest-speech-offer {
+.slogan__box-contest-speech-offer { // не срабатывают стили класса slogan__speech-offer
   margin: 45px auto 30px;
   width: 280px;
-  padding: 0 20px;
+  padding: 46px 20px 0;
+  font-weight: normal; // не срабатывают стили класса slogan__speech-offer
+  font-size: 14px; // не срабатывают стили класса slogan__speech-offer
+  line-height: 30px; // не срабатывают стили класса slogan__speech-offer
+  text-align: center; // не срабатывают стили класса slogan__speech-offer
 
   @media (min-width: @tablet-width) {
-    margin: 91px auto 70px;
+    margin: 107px auto 10px;
     width: 560px;
+    font-size: 18px; // не срабатывают стили класса slogan__speech-offer
   }
 
   @media (min-width: @desktop-width) {
-    margin: 91px auto 46px;
+    margin: 153px auto 46px;
     width: 805px;
     padding: 0 130px;
   }
