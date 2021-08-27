@@ -46,25 +46,32 @@
           <h1 class="slogan__speech-header slogan__box-photos-speech-header">Фотографии пользователей</h1>
         </div>
         <div class="slogan__box-offer slogan__box-offer--photos">
-          <p class="slogan__speech-offer slogan__box-photos-speech-offer">Взгляните на фотографии, которые выкладывают пользователи!</p>
-          <p  class="slogan__speech-offer slogan__box-photos-speech-offer">Видите, как не хватает ваших?</p>
+          <p class="slogan__speech-offer slogan__box-photos-speech-offer">Взгляните на фотографии, которые выкладывают пользователи! <br>
+          Видите, как не хватает ваших?</p>
         </div>
       </div>
       <div class="photo-main">
-        <div class="photo-main__hit">
-          <a class="photo-main__img">
-            <img class="photo-main__img" src="./img/panorama-mob.jpg" width="320" height="137" alt="Панорамный_вид_с_канатной_дороги_на_холмы_и_реку">
+        <div class="photo-main__box-hit photo-main__hit">
+          <a class="photo-main__box-hit-img photo-main__img">
+            <picture>
+              <!-- <source type="image/webp" media="(min-width: 980px)" srcset="./img/panorama-desk.webp 1x, ./img/panorama-desk@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 640px)" srcset="./img/panorama-tabl.webp 1x, ./img/panorama-tabl@2x.webp 2x">
+              <source type="image/webp" srcset="./img/panorama-mob.webp 1x, ./img/panorama-mob@2x.webp 2x"> -->
+              <source media="(min-width: 980px)" srcset="./img/panorama-desk.jpg 1x, ./img/panorama-desk@2x.jpg 2x">
+              <source media="(min-width: 640px)" srcset="./img/panorama-tabl.jpg 1x, ./img/panorama-tabl@2x.jpg 2x">
+              <img class="photo-main__img" src="./img/panorama-mob.jpg" srcset="./img/panorama-mob@2x.jpg" width="320" height="137" alt="Панорамный_вид_с_канатной_дороги_на_холмы_и_реку">
+            </picture>
           </a>
           <p class="photo-main__box-hit-title photo-main__title">Панорама дня</p>
         </div>
         <div class="photo-main__box-description photo-main__description">
-          <div class="photo-main__caption">
+          <div class="photo-main__box-description-caption photo-main__caption">
             <p class="photo-main__author">Анна</p>
             <p class="photo-main__box-caption-time photo-main__time">(5 минут назад)</p>
           </div>
-          <p class="photo-main__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+          <p class="photo-main__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите&nbsp;прямую трансляцию в перископе, задавайте свои вопросы!</p>
           <div class="photo-main__box-description-like photo-main__like">
-            <svg class="photo-main__like-img" width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="photo-main__box-like-img photo-main__like-img" width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M6.46867 12C6.3589 12.0014 6.25012 11.9798 6.14988 11.9367C6.04963 11.8935 5.96033 11.8298 5.88815 11.75C1.95926 7.42 1.03665 6.44 0.860416 6.17C0.307088 5.49497 0.00416162 4.66056 0 3.8C0.00441359 3.07425 0.223059 2.36473 0.63034 1.7545C1.03762 1.14428 1.61668 0.658598 2.29973 0.354328C2.98278 0.0500576 3.74155 -0.0602132 4.48721 0.036425C5.23287 0.133063 5.93456 0.432611 6.51014 0.9C7.22774 0.319491 8.13412 0.00090711 9.07066 0C10.1136 0.00264761 11.1129 0.404172 11.8494 1.11652C12.5859 1.82888 12.9995 2.79391 12.9995 3.8C13.014 4.67715 12.6845 5.5272 12.0769 6.18L7.03883 11.74C6.9678 11.8185 6.88016 11.8814 6.78182 11.9246C6.68348 11.9677 6.5767 11.99 6.46867 11.99V12ZM2.07329 5.28C2.29099 5.54 4.63381 8.12 6.46867 10.14L10.947 5.2C11.3073 4.81798 11.5005 4.3163 11.486 3.8C11.486 3.18205 11.2316 2.5894 10.7786 2.15244C10.3256 1.71548 9.71126 1.47 9.07066 1.47C8.69007 1.47297 8.31512 1.55909 7.97398 1.7219C7.63285 1.8847 7.33439 2.11996 7.10103 2.41C7.02566 2.49603 6.9321 2.56553 6.82661 2.61382C6.72113 2.66211 6.60615 2.68809 6.48941 2.69C6.37337 2.68847 6.25936 2.6605 6.15667 2.60836C6.05398 2.55622 5.96552 2.4814 5.89852 2.39C5.66784 2.10104 5.37087 1.86758 5.03093 1.70796C4.69099 1.54833 4.31732 1.46688 3.93926 1.47C3.48505 1.47534 3.04153 1.6036 2.65919 1.84016C2.27684 2.07673 1.97103 2.41211 1.77658 2.8081C1.58213 3.2041 1.50684 3.64481 1.5593 4.08006C1.61176 4.51531 1.78985 4.9276 2.07329 5.27V5.28Z" fill="#D22856"/>
             </svg>
             <p class="photo-main__box-like-like-number photo-main__like-number">Нравится: 215</p>
@@ -74,7 +81,14 @@
       <div class="photo-other photo-other--box">
         <div class="photo-other__photo">
           <a class="photo-other__box-photo-img photo-other__img">
-            <img class="photo-other__box-photo-img photo-other__img" src="./img/white-car-mob.jpg" width="280" height="180" alt="Белый_легковой_автомобиль_на_стоянке">
+            <picture>
+              <!-- <source type="image/webp" media="(min-width: 980px)" srcset="./img/white-car-desk.webp 1x, ./img/white-car-desk@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 640px)" srcset="./img/white-car-tabl.webp 1x, ./img/white-car-tabl@2x.webp 2x">
+              <source type="image/webp" srcset="./img/white-car-mob.webp 1x, ./img/white-car-mob@2x.webp 2x"> -->
+              <source media="(min-width: 980px)" srcset="./img/white-car-desk.jpg 1x, ./img/white-car-desk@2x.jpg 2x">
+              <source media="(min-width: 640px)" srcset="./img/white-car-tabl.jpg 1x, ./img/white-car-tabl@2x.jpg 2x">
+              <img class="photo-other__box-photo-img photo-other__img" src="./img/white-car-mob.jpg" srcset="./img/white-car-mob@2x.jpg" width="280" height="180" alt="Белый_легковой_автомобиль_на_стоянке">
+            </picture>
           </a>
           <div class="photo-other__box-photo-description photo-other__description">
             <div class="photo-other__caption">
@@ -92,7 +106,14 @@
         </div>
         <div class="photo-other__photo">
           <a class="photo-other__box-photo-img photo-other__img">
-            <img class="photo-other__box-photo-img photo-other__img" src="./img/drums-mob.jpg" width="280" height="180" alt="Музыкальная_барабанная_установка">
+            <picture>
+              <!-- <source type="image/webp" media="(min-width: 980px)" srcset="./img/drums-desk.webp 1x, ./img/drums-desk@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 640px)" srcset="./img/drums-tabl.webp 1x, ./img/drums-tabl@2x.webp 2x">
+              <source type="image/webp" srcset="./img/drums-mob.webp 1x, ./img/drums-mob@2x.webp 2x"> -->
+              <source media="(min-width: 980px)" srcset="./img/drums-desk.jpg 1x, ./img/drums-desk@2x.jpg 2x">
+              <source media="(min-width: 640px)" srcset="./img/drums-tabl.jpg 1x, ./img/drums-tabl@2x.jpg 2x">
+              <img class="photo-other__box-photo-img photo-other__img" src="./img/drums-mob.jpg" srcset="./img/drums-mob@2x.jpg" width="280" height="180" alt="Музыкальная_барабанная_установка">
+            </picture>
           </a>
           <div class="photo-other__box-photo-description photo-other__description">
             <div class="photo-other__caption">
@@ -110,7 +131,14 @@
         </div>
         <div class="photo-other__photo">
           <a class="photo-other__box-photo-img photo-other__img">
-            <img class="photo-other__box-photo-img photo-other__img" src="./img/glass-ceiling-mob.jpg" width="280" height="180" alt="Небо_сквозь_стеклянные_окна_крыши">
+            <picture>
+              <!-- <source type="image/webp" media="(min-width: 980px)" srcset="./img/glass-ceiling-desk.webp 1x, ./img/glass-ceiling-desk@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 640px)" srcset="./img/glass-ceiling-tabl.webp 1x, ./img/glass-ceiling-tabl@2x.webp 2x">
+              <source type="image/webp" srcset="./img/glass-ceiling-mob.webp 1x, ./img/glass-ceiling-mob@2x.webp 2x"> -->
+              <source media="(min-width: 980px)" srcset="./img/glass-ceiling-desk.jpg 1x, ./img/glass-ceiling-desk@2x.jpg 2x">
+              <source media="(min-width: 640px)" srcset="./img/glass-ceiling-tabl.jpg 1x, ./img/glass-ceiling-tabl@2x.jpg 2x">
+              <img class="photo-other__box-photo-img photo-other__img" src="./img/glass-ceiling-mob.jpg" srcset="./img/glass-ceiling-mob@2x.jpg" width="280" height="180" alt="Небо_сквозь_стеклянные_окна_крыши">
+            </picture>
           </a>
           <div class="photo-other__box-photo-description photo-other__description">
             <div class="photo-other__caption">
@@ -128,7 +156,14 @@
         </div>
         <div class="photo-other__photo">
           <a class="photo-other__box-photo-img photo-other__img">
-            <img class="photo-other__box-photo-img photo-other__img" src="./img/orange-tent-mob.jpg" width="280" height="180" alt="Бахчевый_рынок_под_оранжевым_навесом">
+            <picture>
+              <!-- <source type="image/webp" media="(min-width: 980px)" srcset="./img/orange-tent-desk.webp 1x, ./img/orange-tent-desk@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 640px)" srcset="./img/orange-tent-tabl.webp 1x, ./img/orange-tent-tabl@2x.webp 2x">
+              <source type="image/webp" srcset="./img/orange-tent-mob.webp 1x, ./img/orange-tent-mob@2x.webp 2x"> -->
+              <source media="(min-width: 980px)" srcset="./img/orange-tent-desk.jpg 1x, ./img/orange-tent-desk@2x.jpg 2x">
+              <source media="(min-width: 640px)" srcset="./img/orange-tent-tabl.jpg 1x, ./img/orange-tent-tabl@2x.jpg 2x">
+              <img class="photo-other__box-photo-img photo-other__img" src="./img/orange-tent-mob.jpg" srcset="./img/orange-tent-mob@2x.jpg" width="280" height="180" alt="Бахчевый_рынок_под_оранжевым_навесом">
+            </picture>
           </a>
           <div class="photo-other__box-photo-description photo-other__description">
             <div class="photo-other__caption">
@@ -146,7 +181,14 @@
         </div>
         <div class="photo-other__photo">
           <a class="photo-other__box-photo-img photo-other__img">
-            <img class="photo-other__box-photo-img photo-other__img" src="./img/legs-hillside-mob.jpg" width="280" height="180" alt="Вид_на_горный_спуск,_сидя_на_краю_камня._Ноги_тоже_попали_в_кадр.">
+            <picture>
+              <!-- <source type="image/webp" media="(min-width: 980px)" srcset="./img/legs-hillside-desk.webp 1x, ./img/legs-hillside-desk@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 640px)" srcset="./img/legs-hillside-tabl.webp 1x, ./img/legs-hillside-tabl@2x.webp 2x">
+              <source type="image/webp" srcset="./img/legs-hillside-mob.webp 1x, ./img/legs-hillside-mob@2x.webp 2x"> -->
+              <source media="(min-width: 980px)" srcset="./img/legs-hillside-desk.jpg 1x, ./img/legs-hillside-desk@2x.jpg 2x">
+              <source media="(min-width: 640px)" srcset="./img/legs-hillside-tabl.jpg 1x, ./img/legs-hillside-tabl@2x.jpg 2x">
+              <img class="photo-other__box-photo-img photo-other__img" src="./img/legs-hillside-mob.jpg" srcset="./img/legs-hillside-mob@2x.jpg" width="280" height="180" alt="Вид_на_горный_спуск,_сидя_на_краю_камня._Ноги_тоже_попали_в_кадр.">
+            </picture>
           </a>
           <div class="photo-other__box-photo-description photo-other__description">
             <div class="photo-other__caption">
@@ -164,7 +206,14 @@
         </div>
         <div class="photo-other__photo">
           <a class="photo-other__box-photo-img photo-other__img">
-            <img class="photo-other__box-photo-img photo-other__img" src="./img/sun-airplane-mob.jpg" width="280" height="180" alt="Солнце_светит_из-за_крыла_летящего_самолёта">
+            <picture>
+              <!-- <source type="image/webp" media="(min-width: 980px)" srcset="./img/sun-airplane-desk.webp 1x, ./img/sun-airplane-desk@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 640px)" srcset="./img/sun-airplane-tabl.webp 1x, ./img/sun-airplane-tabl@2x.webp 2x">
+              <source type="image/webp" srcset="./img/sun-airplane-mob.webp 1x, ./img/sun-airplane-mob@2x.webp 2x"> -->
+              <source media="(min-width: 980px)" srcset="./img/sun-airplane-desk.jpg 1x, ./img/sun-airplane-desk@2x.jpg 2x">
+              <source media="(min-width: 640px)" srcset="./img/sun-airplane-tabl.jpg 1x, ./img/sun-airplane-tabl@2x.jpg 2x">
+              <img class="photo-other__box-photo-img photo-other__img" src="./img/sun-airplane-mob.jpg" srcset="./img/sun-airplane-mob@2x.jpg" width="280" height="180" alt="Солнце_светит_из-за_крыла_летящего_самолёта">
+            </picture>
           </a>
           <div class="photo-other__box-photo-description photo-other__description">
             <div class="photo-other__caption">
@@ -189,17 +238,24 @@
         </div>
         <div class="apload__box-content">
           <div class="apload__box-content-user-content apload__user-content">
-            <img class="apload__box-user-content-user-photo apload__user-photo" src="./img/snowy-road-mob.jpg" width="280" height="374" id="user-photo" alt="Утро._Поворот_заснеженной_дороги.">
+            <picture>
+              <!-- <source type="image/webp" media="(min-width: 980px)" srcset="./img/snowy-road-desk.webp 1x, ./img/snowy-road-desk@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 640px)" srcset="./img/snowy-road-tabl.webp 1x, ./img/snowy-road-tabl@2x.webp 2x">
+              <source type="image/webp" srcset="./img/snowy-road-mob.webp 1x, ./img/snowy-road-mob@2x.webp 2x"> -->
+              <source media="(min-width: 980px)" srcset="./img/snowy-road-desk.jpg 1x, ./img/snowy-road-desk@2x.jpg 2x">
+              <source media="(min-width: 640px)" srcset="./img/snowy-road-tabl.jpg 1x, ./img/snowy-road-tabl@2x.jpg 2x">
+              <img class="apload__box-user-content-user-photo apload__user-photo" src="./img/snowy-road-mob.jpg" srcset="./img/snowy-road-mob@2x.jpg" width="280" height="374" id="user-photo" alt="Утро._Поворот_заснеженной_дороги.">
+            </picture>
             <div class="range range--box">
               <svg class="range__box-range-icon range__icon range__icon-crop" width="44" height="44" viewBox="0 0 44 44" fill="#D22856" xmlns="http://www.w3.org/2000/svg">
                 <path d="M32 28H36V12C36 10.9391 35.5786 9.92172 34.8284 9.17157C34.0783 8.42143 33.0609 8 32 8H16V12H32V28ZM12 32V0H8V8H0V12H8V32C8 33.0609 8.42143 34.0783 9.17157 34.8284C9.92172 35.5786 10.9391 36 12 36H32V44H36V36H44V32H12Z" />
               </svg>
-              <input class="range__box-range-toggle range__toggle range__toggle-crop" type="range" name="crop" min="0" max="100" step="1" value="80">
+              <input class="range__box-range-toggle range__toggle range__toggle-crop" type="range" name="crop" min="0" max="100" step="1" value="85">
               <svg class="range__box-range-icon range__icon range__icon-fill" width="48" height="43" viewBox="0 0 48 43" fill="#D22856" xmlns="http://www.w3.org/2000/svg">
                 <path d="M33.12 17.88L15.24 0L12.41 2.83L17.17 7.59L6.88 17.88C6.3182 18.4425 6.00264 19.205 6.00264 20C6.00264 20.795 6.3182 21.5575 6.88 22.12L17.88 33.12C18.4425 33.6818 19.205 33.9974 20 33.9974C20.795 33.9974 21.5575 33.6818 22.12 33.12L33.12 22.12C33.6818 21.5575 33.9974 20.795 33.9974 20C33.9974 19.205 33.6818 18.4425 33.12 17.88ZM10.41 20L20 10.42L29.59 20H10.41ZM38 23C38 23 34 27.33 34 30C34 31.0609 34.4214 32.0783 35.1716 32.8284C35.9217 33.5786 36.9391 34 38 34C39.0609 34 40.0783 33.5786 40.8284 32.8284C41.5786 32.0783 42 31.0609 42 30C42 27.33 38 23 38 23Z" />
                 <path d="M48 40H0V43H48V40Z" />
               </svg>
-              <input class="range__box-range-toggle range__toggle range__toggle-fill" type="range" name="fill" min="0" max="100" step="1" value="20">
+              <input class="range__box-range-toggle range__toggle range__toggle-fill" type="range" name="fill" min="0" max="100" step="1" value="13">
               <svg class="range__box-range-icon range__icon range__icon-contrast" width="32" height="32" viewBox="0 0 32 32" fill="#D22856" xmlns="http://www.w3.org/2000/svg">
                 <path d="M16 4C18.3734 4 20.6935 4.70379 22.6669 6.02236C24.6402 7.34094 26.1783 9.21509 27.0866 11.4078C27.9948 13.6005 28.2325 16.0133 27.7694 18.3411C27.3064 20.6689 26.1635 22.8071 24.4853 24.4853C22.8071 26.1635 20.6689 27.3064 18.3411 27.7694C16.0133 28.2324 13.6005 27.9948 11.4078 27.0866C9.21509 26.1783 7.34095 24.6402 6.02237 22.6668C4.70379 20.6935 4.00001 18.3734 4.00001 16C4.00001 12.8174 5.26429 9.76515 7.51473 7.51472C9.76516 5.26428 12.8174 4 16 4ZM16 0C12.8355 0 9.74207 0.938384 7.11088 2.69649C4.4797 4.45459 2.42894 6.95345 1.21793 9.87706C0.0069325 12.8007 -0.309921 16.0177 0.307443 19.1214C0.924806 22.2251 2.44866 25.0761 4.6863 27.3137C6.92394 29.5513 9.77487 31.0752 12.8786 31.6926C15.9823 32.3099 19.1993 31.9931 22.1229 30.7821C25.0466 29.5711 27.5454 27.5203 29.3035 24.8891C31.0616 22.2579 32 19.1645 32 16C32 11.7565 30.3143 7.68687 27.3137 4.68629C24.3131 1.68571 20.2435 0 16 0Z" />
                 <path d="M16 24.29C18.1536 24.1422 20.1708 23.1824 21.644 21.6046C23.1172 20.0268 23.9366 17.9486 23.9366 15.79C23.9366 13.6314 23.1172 11.5532 21.644 9.97538C20.1708 8.39759 18.1536 7.43782 16 7.29" />
@@ -214,7 +270,7 @@
         </div>
       </form>
     </main>
-    <footer class="footer footer--box">
+    <footer class="footer footer--box footer--box-photos">
       <h2 class="visually-hidden">Сайт разработан</h2>
       <svg class="footer__box-footer-logo footer__logo" width="145" height="40" viewBox="0 0 145 40" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M71.005 18.5486C71.0049 18.2125 71.1358 17.8898 71.3697 17.6494C71.6037 17.409 71.922 17.2701 72.2568 17.2623H79.39C84.4469 17.2623 87.7751 19.9645 87.7751 24.3918V24.4516C87.7751 29.2977 83.7415 31.8105 78.9727 31.8105H73.5384V38.611C73.5539 38.7874 73.5328 38.9651 73.4762 39.1329C73.4196 39.3006 73.3289 39.4547 73.2097 39.5854C73.0906 39.716 72.9457 39.8204 72.7842 39.8918C72.6227 39.9631 72.4481 40 72.2717 40C72.0952 40 71.9207 39.9631 71.7592 39.8918C71.5977 39.8204 71.4527 39.716 71.3336 39.5854C71.2145 39.4547 71.1237 39.3006 71.0671 39.1329C71.0106 38.9651 70.9894 38.7874 71.005 38.611V18.5486ZM79.0721 29.5171C82.7778 29.5171 85.2119 27.5228 85.2119 24.5314V24.4716C85.2119 21.2608 82.8175 19.5956 79.2509 19.5956H73.588V29.4772L79.0721 29.5171Z" fill="#283645"/>
@@ -247,7 +303,7 @@
           </a>
         </li>
       </ul>
-      <a class="footer__box-footer-developed footer__developed" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="footer__box-footer-developed footer__box-footer-developed--photos footer__developed" href="https://htmlacademy.ru/intensive/adaptive">
         <h3 class="footer__developed-text">Разработано</h3>
         <svg class="footer__developed-icon" width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#D22856"/>

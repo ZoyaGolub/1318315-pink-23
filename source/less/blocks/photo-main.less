@@ -5,13 +5,21 @@
   flex-direction: column;
 }
 
+.photo-main__box-hit {
+  @media (min-width: @tablet-width) {
+    margin-top: -153px;
+  }
+}
+
 .photo-main__hit {
-  color: @white;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 24px;
-  text-align: center;
-  text-transform: uppercase;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.photo-main__box-hit-img {
+  @media (min-width: @desktop-width) {
+    margin-top: 62px;
+  }
 }
 
 .photo-main__img {
@@ -29,8 +37,12 @@
 }
 
 .photo-main__title {
-  display: flex;
-  justify-content: flex-end;
+  color: @white;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .photo-main__box-hit-title {
@@ -45,12 +57,12 @@
   margin-top: 0;
 
   @media (min-width: @tablet-width) {
-    margin-top: 50px;
+    margin-top: 57px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 788px;
-    margin-top: -462px;
+    margin-right: 130px;
+    margin-top: 116px;
   }
 }
 
@@ -92,16 +104,24 @@
 .photo-main__box-description {
   background-color: @grey;
   height: min-content;
-  margin: 0 20px 20px;
-  padding: 20px;
+  margin: -1px 20px 20px;
+  padding: 20px 10px 20px 17px;
 
   @media (min-width: @tablet-width) {
-    margin: 0 20px 50px;
+    margin: -4px 20px 54px;
+    padding: 20px 30px;
   }
 
   @media (min-width: @desktop-width) {
     margin: 0 auto 50px;
-    width: 900px;
+    padding: 15px 27px 22px;
+    width: 884px;
+  }
+}
+
+.photo-main__box-description-caption {
+  @media (min-width: @desktop-width) {
+    padding-top: 6px;
   }
 }
 
@@ -110,7 +130,6 @@
   flex-wrap: wrap;
   align-items: center;
 }
-
 
 .photo-main__author {
   color: @black-blue;
@@ -131,6 +150,10 @@
 
 .photo-main__box-caption-time {
   padding-left: 4px;
+
+  @media (min-width: @desktop-width) {
+    padding-left: 2px;
+  }
 }
 
 .photo-main__text {
@@ -152,6 +175,18 @@
   margin: 0;
 }
 
+.photo-main__box-like-img {
+  @media (min-width: @tablet-width) {
+    order: 2;
+    padding-left: 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 16px;
+    padding-right: 3px;
+  }
+}
+
 .photo-main__like-img {
   color: @red;
   width: 13px;
@@ -168,5 +203,5 @@
 }
 
 .photo-main__box-like-like-number {
-  padding-left: 22px;
+  padding-left: 19px;
 }

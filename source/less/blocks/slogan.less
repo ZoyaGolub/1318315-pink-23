@@ -62,7 +62,9 @@
   top: -61px;
 }
 
-//.slogan__box-offer--photos
+.slogan__box-offer--photos {
+  margin-bottom: 30px;
+}
 
 .slogan__speech-offer {
   color: @black-blue;
@@ -127,29 +129,35 @@
 .slogan__box-photos-speech-header {
   width: 250px;
   margin: 0 auto;
-  padding: 35px 0 50px;
+  padding: 95px 0 77px;
 
   @media (min-width: @tablet-width) {
     width: 600px;
-    padding: 80px 0 75px;
+    padding: 176px 0 128px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 140px 0 105px;
+    padding: 169px 0 90px;
+  }
+}
+
+br {
+  @media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
+    display: none;
   }
 }
 
 .slogan__box-photos-speech-offer {
-  margin: 54px auto 60px;
+  margin: 44px auto -43px;
   width: 300px;
 
   @media (min-width: @tablet-width) {
-    margin: 100px auto 85px;
+    margin: 241px auto 76px;
     width: 550px;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 380px auto 100px;
+    margin: 190px auto 25px;
     width: 700px;
   }
 }
