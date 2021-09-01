@@ -41,6 +41,7 @@ try {
 };
 
 popupRequest.addEventListener("click", function () {
+  popupError.classList.remove("popup--none");
   popupError.classList.add("popup--show");
 
   if (storage) {
@@ -68,20 +69,23 @@ popupRequest.addEventListener("click", function () {
 popupSuccesClose.addEventListener("click", function (evt) {
   evt.preventDefault();
   popupSucces.classList.remove("popup--show");
+  popupSucces.classList.add("popup--none");
 });
 
 popupErrorClose.addEventListener("click", function (evt) {
   evt.preventDefault();
   popupError.classList.remove("popup--show");
+  popupError.classList.add("popup--none");
 });
 
 popupForm.addEventListener("submit", function (evt) {
   if (!popupSurname.value || !popupName.value || !popupEmail.value) {
     evt.preventDefault();
+    popupSucces.classList.remove("popup--none");
     popupSucces.classList.add("popup--show");
-    popupError.classList.remove("popup--show");
   } else {
     evt.preventDefault();
+    popupError.classList.remove("popup--none");
     popupError.classList.add("popup--show");
   }
 });
@@ -91,6 +95,7 @@ window.addEventListener("keydown", function (evt) {
     if (popupError.classList.contains("popup--show")) {
       evt.preventDefault();
       popupError.classList.remove("popup--show");
+      popupError.classList.add("popup--none");
     }
   }
 });
@@ -100,6 +105,7 @@ window.addEventListener("keydown", function (evt) {
     if (popupSucces.classList.contains("popup--show")) {
       evt.preventDefault();
       popupSucces.classList.remove("popup--show");
+      popupSucces.classList.add("popup--none");
     }
   }
 });

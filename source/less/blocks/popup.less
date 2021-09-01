@@ -1,14 +1,16 @@
 // Popup
 
-// .popup {
-//   display: none;
-// }
-
-.popup--box {
-  background: @white;
+.popup {
   box-shadow: 0 7px 15px @grey-shadow;
   border-radius: 1px;
+}
+
+.popup--box {
   margin: 30px auto;
+}
+
+.popup--none {
+  display: none;
 }
 
 .popup--show {
@@ -17,46 +19,79 @@
 
 .popup__error {
   width: 100%;
-  height: 280px;
-  position: fixed;
-  top: 0%;
-  left: 0%;
+  height: 289px;
+  background: @white;
+  box-shadow: 0 7px 15px @grey-shadow;
+  position: relative;
+  top: -1350px;
+  left: 0;
   z-index: 2;
 
   @media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
     width: 460px;
     height: 363px;
-    top: 3%;
-    left: 15%;
+    top: -1974px;
+    left: 101px;
   }
 
   @media (min-width: @desktop-width) {
     width: 780px;
     height: 377px;
-    top: 5%;
-    left: 25%;
+    top: -1078px;
+    left: 210px;
   }
 }
 
 .popup__succes {
   width: 100%;
   height: 380px;
-  position: fixed;
-  top: 15%;
-  left: 0%;
+  background: @white;
+  position: relative; // fixed;
+  top: 116px;
+  margin: 0 auto;
   z-index: 2;
 
   @media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
     width: 460px;
-    top: 25%;
-    left: 15%;
+    height: 432px;
+    top: 180px; // -1490px;
   }
 
   @media (min-width: @desktop-width) {
     width: 780px;
     height: 377px;
-    top: 50%;
-    left: 25%;
+    top: 420px;
+    //left: 210px;
+  }
+}
+
+.popup__center {
+  margin: 0 auto;
+}
+
+.popup__box-error-caption {
+  margin: 40px 22px 0;
+  padding: 40px 20px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 40px 78px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 4px 0 0;
+  }
+}
+
+.popup__box-succes-caption {
+  margin: 40px 22px 0;
+  padding: 37px 0 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 40px 30px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
   }
 }
 
@@ -66,11 +101,41 @@
   font-size: 18px;
   line-height: 24px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+  }
 }
 
-.popup__box-error-caption {
-  margin: 40px 22px 0;
-  padding-top: 40px;
+.popup__box-error-text {
+  width: 280px;
+  margin: 23px auto 27px;
+
+  @media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
+    width: 320px;
+    margin: 24px auto 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+    margin: 22px auto 65px;
+  }
+}
+
+.popup__box-succes-text {
+  width: 266px;
+  margin: 25px auto 41px;
+
+  @media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
+    width: 330px;
+    margin: 22px auto 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+    margin: 21px auto 41px;
+  }
 }
 
 .popup__text {
@@ -79,35 +144,9 @@
   font-size: 14px;
   line-height: 24px;
   text-align: center;
-}
 
-.popup__error-text--box {
-  width: 280px;
-  margin: 37px auto 0;
-
-  @media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
-    width: 235px;
-    margin: 40px auto 0;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 300px;
-    margin: 40px auto 70px;
-  }
-}
-
-.popup__box-succes-text {
-  width: 266px;
-  margin: 37px auto 40px;
-
-  @media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
-    width: 240px;
-    margin-bottom: 37px auto 35px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 350px;
-    margin-bottom: 37px auto 44px;
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
   }
 }
 
@@ -122,13 +161,44 @@
 }
 
 .popup__box-button {
-  width: 90%;
-  height: 59px;
   background-color: @green;
   border: 2px solid @green;
   border-radius: 1px;
-  margin: 51px 5%;
   cursor: pointer;
+}
+
+.popup__box-button--error {
+  width: 280px; // 87%;
+  height: 64px;
+  padding: 15px;
+  margin: 43px 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 280px;
+    margin: 13px 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 300px;
+    margin: 47px 240px;
+  }
+}
+
+.popup__box-button--succes {
+  width: 280px; // 87%;
+  padding: 15px;
+  margin: 43px 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    margin: 50px 80px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 460px;
+    height: 64px;
+    margin: 47px 160px;
+  }
 }
 
 .popup__box-error-button {

@@ -2,11 +2,13 @@
 
 .caption {
   width: 100%;
+  height: 462px;
   background-color: @black-blue;
   background-image: url("../../img/house-background-mob.jpg");
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
+  margin-bottom: 311px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../../img/house-background-mob@2x.jpg");
@@ -15,6 +17,7 @@
   @media (min-width: @tablet-width) {
     height: 731px;
     background-image: url("../../img/house-background-tabl.jpg");
+    margin-bottom: 0;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/house-background-tabl@2x.jpg");
@@ -41,7 +44,6 @@
 
   @media (min-width: @desktop-width) {
     width: 940px;
-    //margin: 0 auto;
   }
 }
 
@@ -110,14 +112,12 @@
 }
 
 .caption__links {
-  // background-color: @dark-blue;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
 
   @media (max-width: @mobail-width-only) {
-    //background-color: transparent;
     order: 3;
   }
 }
