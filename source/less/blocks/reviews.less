@@ -112,7 +112,7 @@
 }
 
 .reviews__slide--current {
-  display: block;
+  display: flex;
 }
 
 .reviews__slide-2 {
@@ -124,14 +124,14 @@
 }
 
 .reviews__author {
-  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+  @media (min-width: @tablet-width) { //and (max-width: @desktop-width) {
     order: 2;
     width: inherit;
   }
 
-  @media (min-width: @desktop-width) {
-    order: 2;
-  }
+  // @media (min-width: @desktop-width) {
+  //   order: 2;
+  // }
 }
 
 .reviews__box-author-name {
