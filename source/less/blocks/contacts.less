@@ -8,9 +8,13 @@
   padding: 0 20px;
   margin: 10px auto 10px;
 
+  @media (min-width: @tablet-width) {
+    margin: 12px 0 10px;
+  }
+
   @media (min-width: @desktop-width) {
     padding: 0 130px;
-    margin: 49px auto 18px;
+    margin: 28px auto 18px;
   }
 }
 
@@ -37,6 +41,8 @@
   padding: 0 20px;
   width: 280px;
   margin: 0 auto;
+  position: relative;
+  z-index: 7;
 
   @media (min-width: @tablet-width) {
     width: 620px;
@@ -68,8 +74,12 @@
 
 .contacts__box-category {
   width: 219px;
-  padding: 4px 0 0;
+  padding: 3px 0 0;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    padding: 5px 0 0;
+  }
 
   @media (min-width: @desktop-width) {
     margin: 0 50px;
@@ -169,6 +179,28 @@
   }
 }
 
+.contacts__box-background::before {
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg width='1200' height='123' viewBox='0 0 1200 123' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M599.5 123L-120 0H1319L599.5 123Z' fill='white'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  width: 100%;
+  height: 38px;
+  position: absolute;
+  z-index: 6;
+  // outline: 2px solid @black-blue;
+
+  @media (min-width: @tablet-width) {
+    height: 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 130px;
+    top: -10px;
+  }
+}
+
 .contacts__background {
   display: flex;
   flex-direction: column;
@@ -229,10 +261,11 @@
 // .contacts__triangle {
 //   width: 100%;
 //   height: 100px;
-//   background-image: url("../../img/triangle-white-background-mob.png");
+//   background-image: url("data:image/svg+xml,%3Csvg width='318' height='123' viewBox='0 0 318 123' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M160 123L-440 0H760L160 123Z' fill='white'/%3E%3C/svg%3E");
+//   // background-image: url("../../img/triangle-white-background-mob.png");
 //   background-repeat: no-repeat;
 //   background-size: cover;
-//   position: relative;
+//   position: absolute;
 //   top: -169px;
 //   z-index: 4;
 

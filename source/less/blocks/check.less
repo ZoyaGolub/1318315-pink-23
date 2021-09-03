@@ -16,24 +16,28 @@
   margin-left: 68px;
 
   @media (min-width: @tablet-width) {
-    margin-left: 104px;
+    margin-left: 118px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 118px;
+    margin-left: 133px;
   }
 }
 
 .check__input-radio {
   position: absolute;
-  top: -13px;
-  left: -65px;
+  top: -7px;
+  left: -69px;
   width: 37px;
   height: 37px;
   border-radius: 50%;
   background-color: @white;
   border: 2px solid @grey-dark;
   cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    left: -60px;
+  }
 
   &:focus-visible {
     border-color: @black-blue;
@@ -70,10 +74,20 @@
   }
 }
 
+.check--progress {
+  @media (min-width: @tablet-width) {
+    margin-left: 103px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 91px;
+  }
+}
+
 .check__input-checkbox {
   position: absolute;
-  top: -10px;
-  left: -60px;
+  top: -8px;
+  left: -59px;
   width: 35px;
   height: 35px;
   border-radius: 1px;

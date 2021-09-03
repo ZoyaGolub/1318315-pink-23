@@ -2,20 +2,22 @@
 
 .caption {
   width: 100%;
+  height: 462px;
   background-color: @black-blue;
   background-image: url("../../img/house-background-mob.jpg");
   background-repeat: no-repeat;
-  background-position: 50% -103px;
+  background-position: 50% 0;
   background-size: cover;
+  margin-bottom: 311px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../../img/house-background-mob@2x.jpg");
   }
 
   @media (min-width: @tablet-width) {
-    height: 620px;
+    height: 731px;
     background-image: url("../../img/house-background-tabl.jpg");
-    background-position: 50% -106px;
+    margin-bottom: 0;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/house-background-tabl@2x.jpg");
@@ -23,9 +25,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    height: 745px;
+    height: 853px;
     background-image: url("../../img/house-background-desk.jpg");
-    background-position: 50% -109px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/house-background-desk@2x.jpg");
@@ -34,14 +35,15 @@
 }
 
 .caption__box-content {
+  margin: 0 auto;
+
   @media (min-width: @tablet-width) {
     width: 620px;
-    margin: 0 auto;
+    padding-top: 110px;
   }
 
   @media (min-width: @desktop-width) {
     width: 940px;
-    margin: 0 auto;
   }
 }
 
@@ -52,12 +54,12 @@
 
 .caption__box-content-slogan {
   width: 87%;
-  padding: 20px 20px 28px;
+  padding: 90px 20px 28px;
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    padding: 93px 0 40px 42px;
+    padding: 93px 0 40px 36px;
     width: 230px;
     margin: 0 0 0 20px;
     z-index: 1;
@@ -110,14 +112,12 @@
 }
 
 .caption__links {
-  // background-color: @dark-blue;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
 
   @media (max-width: @mobail-width-only) {
-    //background-color: transparent;
     order: 3;
   }
 }

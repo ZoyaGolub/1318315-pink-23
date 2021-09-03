@@ -1,10 +1,18 @@
 // Form
 
 .form {
-  padding: 0 20px;
+  @media (max-width: @mobail-width-only) {
+    padding: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 0 20px;
+    margin: 0 auto;
+  }
 
   @media (min-width: @desktop-width) {
     padding: 0 130px;
+    margin: -65px auto 0;
   }
 }
 
@@ -79,10 +87,9 @@
 }
 
 .form__box-order {
-  margin: 0 auto;
-
   @media (min-width: @tablet-width) {
     width: 620px;
+    margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
@@ -92,18 +99,19 @@
 
 .form__human-name-list {
   width: 280px;
-  margin: 0 auto;
-  padding: 0;
+  margin: 0 auto 24px;
+  padding: 0 20px;
 
   @media (min-width: @tablet-width) {
     width: 620px;
+    margin: 34px 0 0;
+    padding: 0;
   }
 
   @media (min-width: @desktop-width) {
     width: 437px;
     height: min-content;
-    margin: 0 0 0 31px;
-    padding: 0;
+    margin: 14px 0 0;
   }
 }
 
@@ -113,11 +121,11 @@
   @media (min-width: @tablet-width) {
     display: flex;
     align-items: baseline;
-    margin-bottom: 20px;
+    margin-bottom: 34px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 25px;
+    margin-bottom: 36px;
   }
 }
 
@@ -131,10 +139,10 @@
 }
 
 .form__box-name {
-  padding: 0 20px;
+  padding: 0 24px;
 
   @media (min-width: @tablet-width) {
-    padding: 0 20px 15px;
+    padding: 0 20px 15px 0;
   }
 }
 
@@ -148,11 +156,15 @@
 }
 
 .form__box-question {
-  margin: 0 auto;
-  padding: 45px 20px 0;
+  margin: -28px auto;
+  padding: 34px 20px 0;
 
   @media (min-width: @tablet-width) {
     padding: 0 30px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 24px 0;
   }
 }
 
@@ -165,13 +177,17 @@
 }
 
 .form__box-text {
-  padding: 23px 20px;
+  padding: 0 21px;
   border: 2px solid @grey-dark;
   border-radius: 1px;
   box-sizing: border-box;
   width: 100%;
   height: 59px;
-  margin: 12px 0 29px 0;
+  margin: 6px 0 20px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 23px;
+  }
 
   &:focus {
     border-color: @black-blue;
@@ -211,44 +227,51 @@
 
   @media (min-width: @tablet-width) {
     background-color: @white;
-    margin-top: 45px;
+    margin-top: 41px;
   }
 
   @media (min-width: @desktop-width) {
     width: 433px;
-    height: 266px;
-    margin: 20px 0 95px -17px;
+    height: 310px;
+    margin: 20px 0 56px -17px;
   }
 }
 
 .form__os-ask {
   height: min-content;
   width: 280px;
-  margin: 0 auto;
+  margin: 1px auto 0;
+  padding: 0 20px;
 
   @media (min-width: @tablet-width) {
-    height: 283px;
-    width: 590px;
-    margin: 0 auto;
+    height: 306px;
+    width: 616px;
+    margin: 0;
+    padding: 0;
   }
 
   @media (min-width: @desktop-width) {
-    height: 263px;
-    width: 400px;
-    margin: 0 0 69px 55px;
+    height: 309px;
+    width: 432px;
+    margin: 0 0 69px 11px;
   }
 }
 
 .form__os-answer-list {
   padding: 0;
+  margin: 49px 0 0 1px;
 
   @media (min-width: @tablet-width) {
-    margin: 40px 0;
+    margin: 69px 0;
   }
 }
 
 .form__os-answer-item--box-radio {
-  margin-bottom: 38px;
+  margin-bottom: 45px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 47px;
+  }
 }
 
 .form__os-answer-item {
@@ -257,17 +280,19 @@
 
 .form__contacts {
   width: 280px;
-  margin: 65px auto 0;
+  margin: 18px auto 6px;
+  padding: 0 20px;
 
   @media (min-width: @tablet-width) {
     padding: 0 60px;
-    margin: 65px auto 0;
-    width: 500px;
+    margin: 54px auto 0;
+    width: 496px;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 auto;
-    width: 815px;
+    margin: 0;
+    padding: 0;
+    width: 936px;
   }
 }
 
@@ -277,15 +302,38 @@
   @media (min-width: @tablet-width) {
     display: block;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 30px;
+  }
+}
+
+.form__box-contacts-answer-phone {
+  @media (min-width: @desktop-width) {
+    padding-left: 60px;
+  }
+}
+
+.form__box-contacts-answer-email {
+  @media (min-width: @desktop-width) {
+    padding-right: 60px;
+  }
 }
 
 .form__contacts-answer-list {
   padding: 0;
 
+  @media (min-width: @tablet-width) {
+    margin: 53px auto 0;
+    height: 268px;
+  }
+
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 74px;
+    height: 240px;
+    margin: -69px auto 0;
   }
 }
 
@@ -303,11 +351,32 @@
   justify-content: flex-end;
 }
 
+.form__name--contacts {
+  @media (min-width: @tablet-width) {
+    padding: 0 20px 26px 17px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 20px 12px 17px;
+  }
+}
+
 .form__text--position {
   position: relative;
 }
 
+.form__text--contacts {
+  @media (min-width: @tablet-width) {
+    margin: 6px 0 13px 0;
+    padding: 0 18px;
+  }
+}
+
 .form__img {
+  @media (max-width: @mobail-width-only) {
+    display: none;
+  }
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -329,6 +398,14 @@
 .form__img--position {
   position: absolute;
   margin: 14px 2px 0 0;
+
+  @media (min-width: @tablet-width) {
+    margin: 8px 2px 0 0;
+  }
+
+  // @media (min-width: @desktop-width) {
+  //   margin: 8px 2px 0 0;
+  // }
 }
 
 .form__icon {
@@ -351,10 +428,11 @@
 }
 
 .form__progress-answer-list {
-  padding: 0;
+  padding: 0 0 29px 0;
 
   @media (min-width: @desktop-width) {
-    height: 228px;
+    height: 182px;
+    padding: 0;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -364,6 +442,11 @@
 .form__progress-answer-item {
   list-style: none;
   margin-top: 52px;
+
+  @media (min-width: @desktop-width) {
+    margin: 37px -32px 14px 11px;
+    width: 330px;
+  }
 }
 
 .form__box-progress {
@@ -374,63 +457,83 @@
   @media (min-width: @tablet-width) {
     background-color: @white;
   }
+
+  @media (min-width: @desktop-width) {
+    width: auto;
+    margin: 0 auto;
+  }
 }
 
 .form__progress-ask {
   border: none;
   width: 280px;
   margin: 0 auto;
+  padding: 0 20px;
 
   @media (min-width: @tablet-width) {
     border: 2px solid @grey-dark;
     border-radius: 1px;
-    margin: 65px auto 0;
+    margin: 53px auto 0;
+    padding: 16px 13px 10px;
     width: 590px;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 65px auto 0;
-    width: 900px;
+    margin: 52px 0 0 -80px;
+    width: 909px;
   }
 }
 
 .form__comments {
   width: 280px;
-  margin: 0 auto;
-  padding: 0;
+  margin: 30px auto 0;
+  padding: 0 20px;
 
   @media (min-width: @tablet-width) {
     padding: 37px 60px 47px;
-    margin: 65px auto;
-    width: 500px;
+    margin: 52px auto 68px;
+    width: 496px;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 65px auto 0;
+    padding: 33px 60px 35px;
+    margin: 53px 0 0;
     width: 815px;
   }
 }
 
-@media (max-width: @mobail-width-only) {
-  .form__comments-question {
+// @media (max-width: @mobail-width-only) {
+//   margin: 0;
+// }
+
+.form__comments-question {
+  @media (max-width: @mobail-width-only) {
     border: transparent;
-    padding: 30px 0 12px;
+    padding: 4px 0 12px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 0 39px 0;
   }
 }
 
 .form__comments-answer {
-  width: 82%;
-  height: 197px;
+  width: 84%;
+  height: 168px;
   border: 2px solid @grey-dark;
   border-radius: 1px;
-  padding: 23px;
+  padding: 15px 22px 15px 20px;
+  margin-top: 25px;
 
   @media (min-width: @tablet-width) {
-    width: 90%;
+    width: 91%;
+    height: 160px;
+    margin-top: 19px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 93%;
+    width: 95%;
+    height: 98px;
   }
 }
 
@@ -447,16 +550,16 @@
 }
 
 .form__box-button {
-  margin: 55px auto 0;
+  margin: 44px auto 0;
   width: 280px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 0 auto;
+    margin: 0 auto;
     width: 620px;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 70px auto 0;
+    margin: 69px auto 0;
     width: 940px;
   }
 }
@@ -480,6 +583,9 @@
   border: 2px solid @green;
   border-radius: 1px;
 
+  @media (min-width: @tablet-width) {
+    width: 297px;
+  }
 
   &:focus {
     background-color: @green-dark;
@@ -514,12 +620,29 @@
   text-transform: uppercase;
 }
 
-@media (max-width: @mobail-width-only) {
-  .form__footnote--box {
-    margin: 46px auto;
+.form__footnote--box {
+  @media (max-width: @mobail-width-only) {
+    margin: 38px auto 19px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 182px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 314px;
   }
 }
 
 .form__footnote-star {
   color: @red;
+  padding-right: 9px;
+}
+
+.form__footnote-words {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: inline;
+  }
 }
