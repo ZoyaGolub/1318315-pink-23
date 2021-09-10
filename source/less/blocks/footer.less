@@ -56,7 +56,6 @@
 
   @media (min-width: @desktop-width) {
     margin: 54px auto 40px;
-    padding: 0 130px;
     width: 940px;
   }
 }
@@ -72,12 +71,50 @@
   align-items: flex-end;
   justify-content: space-between;
 
+  &:focus {
+    fill: @red;
+  }
+
+  &:hover {
+    fill: @red;
+  }
+
+  &:active {
+    fill: @black-blue;
+    opacity: 0.3;
+  }
+
   @media (min-width: @tablet-width) {
     align-items: center;
   }
 
-  &:active {
-    opacity: 0.3;
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.footer__logo-desk {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    width: 147px;
+    height: 40px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    &:focus {
+      fill: @red;
+    }
+
+    &:hover {
+      fill: @red;
+    }
+
+    &:active {
+      fill: @black-blue;
+      opacity: 0.3;
+    }
   }
 }
 

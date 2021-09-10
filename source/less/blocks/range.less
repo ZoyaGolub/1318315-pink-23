@@ -39,7 +39,7 @@
 }
 
 .range__box-range-icon {
-  margin: 13px;
+  margin: 16px 14px 10px; //13px;
 
   @media (min-width: @tablet-width) {
     margin: -19px 10px 13px 19px;
@@ -47,8 +47,8 @@
 }
 
 .range__icon {
-  width: 48px;
-  height: 48px;
+  // width: 48px;
+  // height: 48px;
   cursor: pointer;
 
   &:focus {
@@ -74,22 +74,30 @@
 
 .range__icon-crop {
   fill: @red;
-  width: 44px;
-  height: 44px;
+  width: 42px; //44px;
+  height: 45px; //44px;
 
   @media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
     width: 22px;
     height: 22px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 44px;
+    height: 44px;
+  }
 }
 
 .range__icon-fill {
-  fill: @black-blue;
-  fill-opacity: 0.3;
-  width: 48px;
-  height: 43px;
+  @media (max-width: @mobail-width-only) {
+    fill: @black-blue;
+    fill-opacity: 0.3;
+    width: 48px;
+    height: 43px;
+    padding-left: 9px;
+  }
 
-  @media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
+  @media (min-width: @tablet-width) {
     fill: @red;
     fill-opacity: 1;
     width: 24px;
@@ -97,8 +105,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    fill: @red;
-    fill-opacity: 1;
+    // fill: @red;
+    // fill-opacity: 1;
     width: 47px;
     height: 43px;
   }
@@ -107,10 +115,11 @@
 .range__icon-contrast {
   fill: @black-blue;
   fill-opacity: 0.3;
-  width: 48px;
-  height: 43px;
+  width: 35px;
+  height: 35px;
+  padding: 5px;
 
-  @media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
+  @media (min-width: @tablet-width) {
     fill: @red;
     fill-opacity: 1;
     width: 16px;
@@ -119,8 +128,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    fill: @red;
-    fill-opacity: 1;
+    // fill: @red;
+    // fill-opacity: 1;
     width: 34px;
     height: 33px;
     padding: 5px;
@@ -200,12 +209,13 @@
 
 .range__toggle::after {
   content: "";
-  width: 100%;
+  width: 320px;
   height: 1px;
-  color: @black-blue;
+  background-color: @black-blue;
+  opacity: 0.1;
   position: absolute;
-  top: 40px;
-  // outline: 3px solid @black;
+  top: 38px;
+  left: -40px;
 
   @media (min-width: @tablet-width) {
     width: 275px;
@@ -214,15 +224,16 @@
 
   @media (min-width: @desktop-width) {
     width: 410px;
-    left: -90px;
+    top: 35px;
+    left: -95px;
   }
 }
 
-.range__toggle::after:last-child {
-  @media (min-width: @desktop-width) {
-    display: none;
-  }
-}
+// .range__toggle::after:last-child {
+//   @media (min-width: @desktop-width) {
+//     display: none;
+//   }
+// }
 
 .range__toggle-crop {
   order: 2;
