@@ -72,7 +72,7 @@ try {
   isStorageSupport = false;
 };
 
-popupRequest.addEventListener('click', function() {
+popupRequest.addEventListener('click', function() { // Ошибка в консоли
   if (storage) {
     popupSurname.value = storage;
     popupName.focus();
