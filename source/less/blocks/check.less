@@ -24,6 +24,24 @@
   }
 }
 
+.check__input {
+  &:focus-visible + .check__span-hover {
+    border-color: @black-blue;
+  }
+
+  &:focus + .check__span-hover {
+    border-color: @black-blue;
+  }
+
+  &:hover + .check__span-hover {
+    border-color: @black-blue;
+  }
+
+  &:active + .check__span-hover {
+    border-color: @red;
+  }
+}
+
 .check__input-radio {
   position: absolute;
   top: -7px;
@@ -37,22 +55,6 @@
 
   @media (min-width: @tablet-width) {
     left: -60px;
-  }
-
-  &:focus-visible {
-    border-color: @black-blue;
-  }
-
-  &:focus {
-    border-color: @black-blue;
-  }
-
-  &:hover {
-    border-color: @black-blue;
-  }
-
-  &:active {
-    border-color: @red;
   }
 }
 
@@ -100,22 +102,6 @@
   background: @white;
   border: 2px solid @grey-dark;
   cursor: pointer;
-
-  &:focus-visible {
-    border-color: @black-blue;
-  }
-
-  &:focus {
-    border-color: @black-blue;
-  }
-
-  &:hover {
-    border-color: @black-blue;
-  }
-
-  &:active {
-    border-color: @red;
-  }
 }
 
 .check__input:checked + .check__input-checkbox {

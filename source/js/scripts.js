@@ -72,69 +72,81 @@ try {
   isStorageSupport = false;
 };
 
-popupRequest.addEventListener('click', function() {
-  if (storage) {
-    popupSurname.value = storage;
-    popupName.focus();
-  } else {
-    popupSurname.focus();
+if (popupRequest) {
+  popupRequest.addEventListener('click', function() {
     if (storage) {
-      popupName.value = storage;
-      popupEmail.focus();
-    } else {
+      popupSurname.value = storage;
       popupName.focus();
+    } else {
+      popupSurname.focus();
       if (storage) {
-        popupEmail.value = storage;
-        popupPatronymic.focus();
-      } else {
+        popupName.value = storage;
         popupEmail.focus();
+      } else {
+        popupName.focus();
+        if (storage) {
+          popupEmail.value = storage;
+          popupPatronymic.focus();
+        } else {
+          popupEmail.focus();
+        }
       }
     }
-  }
 
-  popupSurname.focus();
-});
+    popupSurname.focus();
+  });
+}
 
-popupSuccesClose.addEventListener('click', function (evt) {
-  evt.preventDefault();
-  popupSucces.classList.remove('popup--show');
-  popupSucces.classList.add('popup--none');
-});
-
-popupErrorClose.addEventListener('click', function (evt) {
-  evt.preventDefault();
-  popupError.classList.remove('popup--show');
-  popupError.classList.add('popup--none');
-});
-
-popupForm.addEventListener('submit', function (evt) {
-  if (!popupSurname.value || !popupName.value || !popupEmail.value) {
+if (popupSuccesClose) {
+  popupSuccesClose.addEventListener('click', function (evt) {
     evt.preventDefault();
-    popupError.classList.remove('popup--none');
-    popupError.classList.add('popup--show');
-  } else {
+    popupSucces.classList.remove('popup--show');
+    popupSucces.classList.add('popup--none');
+  });
+}
+
+if (popupErrorClose) {
+  popupErrorClose.addEventListener('click', function (evt) {
     evt.preventDefault();
-    popupSucces.classList.remove('popup--none');
-    popupSucces.classList.add('popup--show');
-  }
-});
+    popupError.classList.remove('popup--show');
+    popupError.classList.add('popup--none');
+  });
+}
 
-window.addEventListener('keydown', function (evt) {
-  if (evt.keyCode === 27) {
-    if (popupError.classList.contains('popup--show')) {
+if (popupForm) {
+  popupForm.addEventListener('submit', function (evt) {
+    if (!popupSurname.value || !popupName.value || !popupEmail.value) {
       evt.preventDefault();
-      popupError.classList.remove('popup--show');
-      popupError.classList.add('popup--none');
+      popupError.classList.remove('popup--none');
+      popupError.classList.add('popup--show');
+    } else {
+      evt.preventDefault();
+      popupSucces.classList.remove('popup--none');
+      popupSucces.classList.add('popup--show');
     }
-  }
-});
+  });
+}
 
-window.addEventListener('keydown', function (evt) {
-  if (evt.keyCode === 27) {
-    if (popupSucces.classList.contains('popup--show')) {
-      evt.preventDefault();
-      popupSucces.classList.remove('popup--show');
-      popupSucces.classList.add('popup--none');
+if (popupError) {
+  window.addEventListener('keydown', function (evt) {
+    if (evt.keyCode === 27) {
+      if (popupError.classList.contains('popup--show')) {
+        evt.preventDefault();
+        popupError.classList.remove('popup--show');
+        popupError.classList.add('popup--none');
+      }
     }
-  }
-});
+  });
+}
+
+if (popupSucces) {
+  window.addEventListener('keydown', function (evt) {
+    if (evt.keyCode === 27) {
+      if (popupSucces.classList.contains('popup--show')) {
+        evt.preventDefault();
+        popupSucces.classList.remove('popup--show');
+        popupSucces.classList.add('popup--none');
+      }
+    }
+  });
+}

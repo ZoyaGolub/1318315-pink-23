@@ -50,6 +50,7 @@
 .caption__content {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .caption__box-content-slogan {
@@ -221,6 +222,10 @@
 }
 
 .caption__box-content-hand-phone {
+  @media (max-width: @mobail-width-only) {
+    margin: 0 auto;
+  }
+
   @media (min-width: @tablet-width) {
     margin: 74px 0 0 -17px;
   }
@@ -234,6 +239,7 @@
   width: 320px;
   height: 286px;
   display: flex;
+
 
   @media (min-width: @tablet-width) {
     width: 660px;
