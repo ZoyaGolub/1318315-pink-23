@@ -7,7 +7,7 @@
     padding-top: 16px;
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-min-width) { //@desktop-width
     display: grid;
     grid-template-rows: min-content min-content;
   }
@@ -28,7 +28,7 @@
     top: 8px;
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-min-width) { //@desktop-width
     height: 715px;
     background-position-y: -35px;
     top: 15px;
@@ -40,20 +40,24 @@
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    padding: 113px 15px 0 14px;
+    padding: 95px 15px 0 14px;//113 15 0 14
     margin: -15px 0 0 -14px;
-    padding-top: 95px;
+    //padding-top: 95px;
   }
 
-  @media (min-width: @desktop-width) {
-    padding: 0 130px;
+  @media (min-width: @desktop-min-width) { //@desktop-width
+    padding: 0 20px;
     background-color: @grey;
     position: relative;
     z-index: 2;
     top: -80px;
     width: 940px;
     margin: 85px auto 0;
-    padding-top: 0;
+    //padding-top: 0;
+  }
+
+  @media (min-width: @desktop-width) { //@desktop-width
+    padding: 0 130px;
   }
 }
 
@@ -62,23 +66,23 @@
     order: 2;
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-min-width) { //@desktop-width
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 10%;
+    column-gap: 2%;
   }
 }
 
-.effects__box-list-item { // underlay-background
+.effects__box-underlay { // .effects__box-list-item { // underlay-background
   width: 100%;
   background-color: @grey;
   margin-top: 43px;
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-min-width) { //@desktop-width
     background-image: url("data:image/svg+xml,%3Csvg width='300' height='189' viewBox='0 0 300 189' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='300' height='189' fill='%23F2F2F2'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     position: relative;
-    top: -92px;
+    top: -136px;
     width: 300px;
   }
 }
@@ -86,9 +90,10 @@
 .effects__item {
   .item-style-none();
 
-  @media (min-width: @desktop-width) {
-    margin: 0 -34px 0 -33px;
+  @media (min-width: @desktop-min-width) { //@desktop-width
+    margin: 0 auto; // 0 -34px 0 -33px;
     padding: 57px 0 0 0;
+    width: 239px;
   }
 }
 
@@ -100,8 +105,8 @@
     margin-top: 1px;
   }
 
-  @media (min-width: @desktop-width) {
-    margin: 0 30px;
+  @media (min-width: @desktop-min-width) { //@desktop-width
+    margin: 0 auto;
   }
 }
 
@@ -116,7 +121,7 @@
     text-align: left;
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-min-width) { //@desktop-width
     font-size: 30px;
     line-height: 30px;
   }
@@ -130,9 +135,9 @@
     width: 104%;
   }
 
-  @media (min-width: @desktop-width) {
-    width: 80%;
-    margin: 24px auto 0;
+  @media (min-width: @desktop-min-width) { //@desktop-width
+    width: auto;
+    margin: 24px 0 0;
   }
 }
 
@@ -147,7 +152,7 @@
     text-align: left;
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-min-width) { //@desktop-width
     font-size: 18px;
     line-height: 30px;
   }
@@ -157,13 +162,13 @@
   margin: 0 auto;
   padding: 0;
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-min-width) { //@desktop-width
     margin: 39px auto 0;
   }
 }
 
 .effects__img-list {
-  @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-min-width) { //@desktop-width
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -174,7 +179,7 @@
 .effects__box-img-list-img-item {
   margin: 0 auto;
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-min-width) { //@desktop-width
     margin: 0;
   }
 }
@@ -184,7 +189,7 @@
   margin: 0 auto;
   padding: 9px 0 0;
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-min-width) { //@desktop-width
     margin: 0 40px 0 4px;
   }
 }
@@ -192,7 +197,7 @@
 .effects__img-1 {
   display: none;
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-min-width) { //@desktop-width
     display: flex;
   }
 }
@@ -200,7 +205,7 @@
 .effects__img-2 {
   display: none;
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-min-width) { //@desktop-width
     display: flex;
   }
 }
@@ -216,7 +221,7 @@
     margin: 1px 17px 0 0;
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-min-width) { //@desktop-width
     margin: 1px -34px 0 0;
   }
 }
@@ -233,7 +238,7 @@
     height: 547px;
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-min-width) { //@desktop-width
     background-color: transparent;
     width: 308px;
     height: 382px;

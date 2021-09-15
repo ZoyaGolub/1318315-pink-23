@@ -53,8 +53,8 @@ exports.server = server;
 
 const watcher = () => {
   gulp.watch("source/less/**/*.less", gulp.series("styles"));
-  //gulp.watch("source/js/scripts.js", gulp.series("scripts")); // не отслеживает scripts.js
-  gulp.watch("source/js/scripts.js").on("change", sync.reload); // не отслеживает scripts.js
+  gulp.watch("source/js/scripts.js", gulp.series("scripts")); // не отслеживает scripts.js
+  //gulp.watch("source/js/scripts.js").on("change", sync.reload); // не отслеживает scripts.js
   gulp.watch("source/*.html").on("change", sync.reload);
 }
 
@@ -76,7 +76,7 @@ const scripts = () => {
   return gulp.src("source/js/scripts.js")
   .pipe(terser())
   .pipe(rename("scripts.min.js"))
-  .pipe(gulp.dest("build/js"))
+  .pipe(gulp.dest("build/js"));
   //.pipe(sync.stream());
 }
 
@@ -160,6 +160,10 @@ const build = gulp.series(
     sprite,
     webpImg
   ),
+  gulp.series(
+    server,
+    watcher
+  )
 );
 
 exports.build = build;

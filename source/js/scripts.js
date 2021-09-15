@@ -3,7 +3,7 @@ const toggleOpen = document.querySelector('.header__toggle-open');
 const toggleClose = document.querySelector('.header__toggle-close');
 const menuNav = document.querySelector('.header__navigation-list');
 
-const popupRequest = document.querySelector('.form__button-send'); //form__button-send--popup
+const popupRequest = document.querySelector('.form__button-send--popup');
 const popupError = document.querySelector('.popup--error');
 const popupSucces = document.querySelector('.popup--succes');
 const popupErrorClose = document.querySelector('.popup__error-button');
@@ -72,7 +72,7 @@ try {
   isStorageSupport = false;
 };
 
-popupRequest.addEventListener('click', function() { // Ошибка в консоли
+popupRequest.addEventListener('click', function() {
   if (storage) {
     popupSurname.value = storage;
     popupName.focus();

@@ -20,7 +20,7 @@
     }
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-min-width) { //@desktop-width
     background-image: url("../img/house-background-desk.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -53,7 +53,7 @@
     top: -150px;
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-min-width) { //@desktop-width
     top: -100px;
   }
 }
@@ -98,8 +98,12 @@
     padding: 176px 20px 59px;
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-min-width) { //@desktop-width
     width: 780px;
+    padding: 168px 20px 89px;
+  }
+
+  @media (min-width: @desktop-width) { //@desktop-width
     padding: 168px 130px 89px;
   }
 }
@@ -119,9 +123,13 @@
     font-size: 18px; // не срабатывают стили класса slogan__speech-offer
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-min-width) { //@desktop-width
     margin: 153px auto 46px;
     width: 805px;
+    padding: 0 20px;
+  }
+
+  @media (min-width: @desktop-width) { //@desktop-width
     padding: 0 130px;
   }
 }
@@ -136,7 +144,7 @@
     padding: 176px 0 128px;
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-min-width) { //@desktop-width
     padding: 169px 0 90px;
   }
 }
@@ -156,7 +164,7 @@ br {
     width: 550px;
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-min-width) { //@desktop-width
     margin: 190px auto 25px;
     width: 700px;
   }

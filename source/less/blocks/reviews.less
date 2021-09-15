@@ -1,6 +1,6 @@
 // Reviews
 
-@media (min-width: @desktop-width) {
+@media (min-width: @desktop-min-width) { //@desktop-width
   .reviews {
     display: grid;
     grid-template-rows: min-content 1fr;
@@ -49,7 +49,11 @@
     padding: 0;
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-min-width) { //@desktop-width
+    padding: 0 20px;
+  }
+
+  @media (min-width: @desktop-width) { //@desktop-width
     padding: 0 130px;
   }
 }
@@ -57,14 +61,14 @@
 .reviews__quotes {
   display: none;
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-min-width) { //@desktop-width
     display: flex;
     margin: 76px auto 50px;
   }
 }
 
 .reviews__box-arrow-slider {
-  @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-min-width) { //@desktop-width
     margin-top: 30px;
   }
 }
@@ -72,7 +76,7 @@
 .reviews__arrow-slider {
   display: none;
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-min-width) { //@desktop-width
     display: inline;
     fill: @black-blue;
     fill-opacity: 0.3;
@@ -101,7 +105,7 @@
     margin: 0 auto;
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-min-width) { //@desktop-width
     width: 860px;
   }
 }
@@ -124,14 +128,10 @@
 }
 
 .reviews__author {
-  @media (min-width: @tablet-width) { //and (max-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     order: 2;
     width: inherit;
   }
-
-  // @media (min-width: @desktop-width) {
-  //   order: 2;
-  // }
 }
 
 .reviews__box-author-name {
@@ -141,7 +141,7 @@
     margin-top: 36px;
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-min-width) { //@desktop-width
     margin-top: 50px;
     margin-bottom: 1px;
   }
@@ -158,7 +158,7 @@
     font-size: 20px;
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-min-width) { //@desktop-width
     font-size: 24px;
   }
 }
@@ -179,7 +179,7 @@
     line-height: 30px;
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-min-width) { //@desktop-width
     font-size: 18px;
   }
 }
@@ -193,7 +193,7 @@
     margin: 0 auto;
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-min-width) { //@desktop-width
     width: 80%;
     margin-bottom: -13px;
   }

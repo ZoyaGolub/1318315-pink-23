@@ -3,7 +3,7 @@
 .researching {
   width: 100%;
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-min-width) { //@desktop-width
     position: relative;
     z-index: 2;
   }
@@ -19,7 +19,7 @@
     margin-bottom: -134px;
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-min-width) { //@desktop-width
     background-color: @grey;
   }
 }
@@ -34,10 +34,14 @@
     padding: 41px 20px 0;
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-min-width) { //@desktop-width
     width: 950px;
-    padding: 122px 130px 15px;
+    padding: 122px 20px 15px;
     margin: -87px auto 0;
+  }
+
+  @media (min-width: @desktop-width) { //@desktop-width
+    padding: 122px 130px 15px;
   }
 }
 
@@ -52,7 +56,7 @@
     column-gap: 10%;
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-min-width) { //@desktop-width
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -63,7 +67,7 @@
     padding-right: 40px;
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-min-width) { //@desktop-width
     margin-top: -66px;
   }
 }
@@ -79,7 +83,7 @@
     height: 305px;
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-min-width) { //@desktop-width
     width: 298px;
     height: 345px;
   }
@@ -91,7 +95,7 @@
     margin-top: 25px;
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-min-width) { //@desktop-width
     padding-left: 5%;
   }
 }
@@ -101,7 +105,7 @@
     width: 300px;
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-min-width) { //@desktop-width
     grid-column-start: 2;
     grid-column-end: -1;
   }
@@ -120,7 +124,7 @@
   font-size: 30px;
   line-height: 36px;
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-min-width) { //@desktop-width
     line-height: 30px;
   }
 }
@@ -131,7 +135,7 @@
     margin-bottom: 10px;
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-min-width) { //@desktop-width
     width: 534px;
     margin: -5px 0 29px;
   }
@@ -143,7 +147,7 @@
   font-size: 14px;
   line-height: 24px;
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-min-width) { //@desktop-width
     font-size: 18px;
     line-height: 30px;
   }
@@ -169,7 +173,7 @@
     opacity: 0.3;
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-min-width) { //@desktop-width
     font-size: 18px;
     line-height: 30px;
   }
