@@ -141,7 +141,7 @@ exports.copy = copy;
 // Clean build
 
 const cleanBuild = () => {
-  return gulp.src("./build", {read: false})
+  return gulp.src("./build", {read: false, allowEmpty: true})
     .pipe(clean())
 };
 
