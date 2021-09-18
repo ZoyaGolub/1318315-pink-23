@@ -14,7 +14,8 @@
   <body class="body">
     <header class="header">
       <div class="header__box-header">
-        <div class="header__box-menu header__menu header__menu-no-js">
+        <section class="header__box-menu header__menu header__menu-no-js">
+          <h2 class="visually-hidden">Навигация по сайту</h2>
           <a class="header__logo" href="index.html" aria-label="Логотип компании Pink">
             <svg class="header__logo-mob header__logo-hover" width="74" height="23" viewBox="0 0 74 23" fill="white" xmlns="http://www.w3.org/2000/svg">
               <path d="M0.00496827 1.54857C0.00487772 1.21254 0.135804 0.889818 0.369742 0.649431C0.60368 0.409043 0.922049 0.27008 1.25676 0.262266H8.39001C13.4469 0.262266 16.7751 2.9645 16.7751 7.39179V7.45162C16.7751 12.2977 12.7415 14.8105 7.97274 14.8105H2.53836V21.611C2.55394 21.7874 2.53277 21.9651 2.47619 22.1329C2.41961 22.3006 2.32887 22.4547 2.20973 22.5854C2.09058 22.716 1.94565 22.8204 1.78416 22.8918C1.62266 22.9631 1.44812 23 1.27166 23C1.0952 23 0.920671 22.9631 0.759173 22.8918C0.597674 22.8204 0.452744 22.716 0.333602 22.5854C0.21446 22.4547 0.123708 22.3006 0.0671295 22.1329C0.0105515 21.9651 -0.0106138 21.7874 0.00496827 21.611V1.54857ZM8.07209 12.5171C11.7778 12.5171 14.2119 10.5228 14.2119 7.53139V7.47156C14.2119 4.26078 11.8175 2.59556 8.25092 2.59556H2.58804V12.4772L8.07209 12.5171Z"/>
@@ -51,7 +52,7 @@
               <path d="M2.15131 0L0 2.15131L20.8487 23L23 20.8487L2.15131 0Z" />
             </svg>
           </button>
-        </div>
+        </section>
         <ul class="header__navigation-list header__navigation-list-no-js">
           <li class="header__navigation-item">
             <a class="header__box-navigation-item header__navigation-page" href="index.html">Главная</a>
@@ -69,16 +70,17 @@
       </div>
     </header>
     <main>
-      <div class="slogan">
+      <section class="slogan">
         <div class="slogan__box">
           <h1 class="slogan__speech-header slogan__box-contest-speech-header">Конкурс на самое безбашенное путешествие с Пинк</h1>
         </div>
         <div class="slogan__box-offer slogan__box-offer--contest">
           <p class="slogan__speech-offer slogan__box-contest-speech-offer">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span class="slogan__speech-fill"> Пожалуйста, заполните форму ниже:</span></p>
         </div>
-      </div>
+      </section>
       <form class="form" id="contest" action="https://echo.htmlacademy.ru" method="get" target="contest">
-        <div class="form__box-order form__order">
+        <section class="form__box-order form__order">
+          <h2 class="visually-hidden">Форма для заполнения данных на конкурс</h2>
           <ul class="form__human-name form__human-name-list">
             <li class="form__human-name-item">
               <label class="form__box-name form__name" for="form__surname">Фамилия</label>
@@ -95,7 +97,7 @@
           </ul>
           <div class="form__box-os form__os">
             <fieldset class="form__caption form__os-ask">
-              <legend class="form__box-question form__question form__os-question">С каким приложением путешествовали?</legend>
+              <legend class="form__box-question form__box-question--legend form__question form__question--legend">С каким приложением путешествовали?</legend>
               <ul class="form__os-answer-list">
                 <li class="form__os-answer-item form__os-answer-item--box-radio">
                   <label class="check check--box check--box-radio" for="Pink_для_iOS">
@@ -150,7 +152,7 @@
           </fieldset>
           <div class="form__box-progress form__progress">
             <fieldset class="form__caption form__progress-ask">
-              <legend class="form__box-question form__question">Ваши безбашенные достижения в путешествии</legend>
+              <legend class="form__box-question form__box-question--legend form__question form__question--legend">Ваши безбашенные достижения в путешествии</legend>
               <ul class="form__progress-answer-list">
                 <li class="form__progress-answer-item">
                   <label class="check check--box check--box-checkbox check--progress" for="Сделал_селфи_с_акулой">
@@ -202,17 +204,19 @@
             <label class="visually-hidden" for="form__comments"></label>
             <textarea class="form__text form__comments-answer" id="form__comments" name="comments" form="contest" placeholder="Можно прям в красках, не стесняясь&nbsp;в выражениях"></textarea>
           </fieldset>
-        </div>
-        <div class="form__box-button form__button">
+        </section>
+        <section class="form__box-button form__button">
+          <h3 class="visually-hidden">Кнопка для отправки данных</h3>
           <button class="form__button-send form__button-send--box form__button-send--popup" type="submit" aria-label="Отправка заполненой формы на конкурс">Отправить форму</button>
-          <p class="form__footnote form__footnote--box"><span class="form__footnote-star">*</span> - Обязательные<span class="form__footnote-words"> для заполнения</span> поля</p>
-        </div>
+          <p class="form__footnote form__footnote--box"><span class="form__footnote-star">*</span>&ndash; Обязательные<span class="form__footnote-words"> для заполнения</span> поля</p>
+        </section>
       </form>
     </main>
-    <div class="popup popup--box popup--error popup--none">
+    <section class="popup popup--box popup--error popup--none">
+      <h2 class="visually-hidden">Сообщение при незаполненном обязательном поле в заполнении формы</h2>
       <div class="popup__error">
         <div class="popup__center">
-          <h2 class="popup__box-error-caption popup__caption">Что-то пошло не так!</h2>
+          <h3 class="popup__box-error-caption popup__caption">Что-то пошло не так!</h3>
           <div class="popup__box-error-text">
             <p class="popup__text">Проверьте поля, выделенные красным, скорее всего&nbsp;вы&nbsp;забыли их заполнить</p>
           </div>
@@ -221,11 +225,12 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="popup popup--box popup--succes popup--none">
+    </section>
+    <section class="popup popup--box popup--succes popup--none">
+      <h2 class="visually-hidden">Сообщение при верном заполнении полей формы</h2>
       <div class="popup__succes">
         <div class="popup__center">
-          <h2 class="popup__box-succes-caption popup__caption">Ваша заявка отправлена</h2>
+          <h3 class="popup__box-succes-caption popup__caption">Ваша заявка отправлена</h3>
           <div class="popup__box-succes-text">
             <p class="popup__text">Спасибо за ваше участие, ваша заявка уже поступила&nbsp;к&nbsp;нам. В ближайшее время&nbsp;мы рассмотрим ее и оповестим&nbsp;вас.</p>
           </div>
@@ -234,7 +239,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <footer class="footer footer--box footer--box-contest">
       <h2 class="visually-hidden">Сайт разработан</h2>
       <svg class="footer__box-footer-logo footer__logo" width="145" height="40" viewBox="0 0 145 40" fill="#283645" xmlns="http://www.w3.org/2000/svg">

@@ -14,7 +14,8 @@
   <body class="body">
     <header class="header">
       <div class="header__box-header">
-        <div class="header__box-menu header__menu header__menu-no-js">
+        <section class="header__box-menu header__menu header__menu-no-js">
+          <h2 class="visually-hidden">Навигация по сайту</h2>
           <a class="header__logo" href="index.html" aria-label="Логотип компании Pink">
             <svg class="header__logo-mob header__logo-hover" width="74" height="23" viewBox="0 0 74 23" fill="white" xmlns="http://www.w3.org/2000/svg">
               <path d="M0.00496827 1.54857C0.00487772 1.21254 0.135804 0.889818 0.369742 0.649431C0.60368 0.409043 0.922049 0.27008 1.25676 0.262266H8.39001C13.4469 0.262266 16.7751 2.9645 16.7751 7.39179V7.45162C16.7751 12.2977 12.7415 14.8105 7.97274 14.8105H2.53836V21.611C2.55394 21.7874 2.53277 21.9651 2.47619 22.1329C2.41961 22.3006 2.32887 22.4547 2.20973 22.5854C2.09058 22.716 1.94565 22.8204 1.78416 22.8918C1.62266 22.9631 1.44812 23 1.27166 23C1.0952 23 0.920671 22.9631 0.759173 22.8918C0.597674 22.8204 0.452744 22.716 0.333602 22.5854C0.21446 22.4547 0.123708 22.3006 0.0671295 22.1329C0.0105515 21.9651 -0.0106138 21.7874 0.00496827 21.611V1.54857ZM8.07209 12.5171C11.7778 12.5171 14.2119 10.5228 14.2119 7.53139V7.47156C14.2119 4.26078 11.8175 2.59556 8.25092 2.59556H2.58804V12.4772L8.07209 12.5171Z"/>
@@ -51,7 +52,7 @@
               <path d="M2.15131 0L0 2.15131L20.8487 23L23 20.8487L2.15131 0Z" />
             </svg>
           </button>
-        </div>
+        </section>
         <ul class="header__navigation-list header__navigation-list-no-js">
           <li class="header__navigation-item">
             <a class="header__box-navigation-item header__navigation-page" href="index.html">Главная</a>
@@ -69,7 +70,7 @@
       </div>
     </header>
     <main>
-      <div class="slogan">
+      <section class="slogan">
         <div class="slogan__box">
           <h1 class="slogan__speech-header slogan__box-photos-speech-header">Фотографии пользователей</h1>
         </div>
@@ -77,9 +78,11 @@
           <p class="slogan__speech-offer slogan__box-photos-speech-offer">Взгляните на фотографии, которые выкладывают пользователи! <br>
           Видите, как не хватает ваших?</p>
         </div>
-      </div>
-      <div class="photo-main">
-        <div class="photo-main__box-hit photo-main__hit">
+      </section>
+      <section class="photo-main">
+        <h2 class="visually-hidden">Самая понравившаяся фотография</h2>
+        <section class="photo-main__box-hit photo-main__hit">
+          <h3 class="visually-hidden">Фото-хит</h3>
           <a class="photo-main__box-hit-img photo-main__img">
             <picture>
               <source type="image/webp" media="(min-width: 980px)" srcset="./img/panorama-desk.webp 1x, ./img/panorama-desk@2x.webp 2x">
@@ -91,8 +94,9 @@
             </picture>
           </a>
           <p class="photo-main__box-hit-title photo-main__title">Панорама дня</p>
-        </div>
-        <div class="photo-main__box-description photo-main__description">
+        </section>
+        <section class="photo-main__box-description photo-main__description">
+          <h3 class="visually-hidden">Данные автора и комментарии</h3>
           <div class="photo-main__box-description-caption photo-main__caption">
             <p class="photo-main__author">Анна</p>
             <p class="photo-main__box-caption-time photo-main__time">(5 минут назад)</p>
@@ -104,10 +108,10 @@
             </svg>
             <p class="photo-main__box-like-like-number photo-main__like-number">Нравится: 215</p>
           </div>
-        </div>
-      </div>
-      <div class="photo-other photo-other--box">
-        <div class="photo-other__photo">
+        </section>
+      </section>
+      <ul class="photo-other photo-other--box">
+        <li class="photo-other__photo">
           <a class="photo-other__box-photo-img photo-other__img">
             <picture>
               <source type="image/webp" media="(min-width: 980px)" srcset="./img/white-car-desk.webp 1x, ./img/white-car-desk@2x.webp 2x">
@@ -118,7 +122,8 @@
               <img class="photo-other__box-photo-img photo-other__img" src="./img/white-car-mob.jpg" srcset="./img/white-car-mob@2x.jpg" width="280" height="180" loading="lazy" alt="Белый_легковой_автомобиль_на_стоянке">
             </picture>
           </a>
-          <div class="photo-other__box-photo-description photo-other__description">
+          <section class="photo-other__box-photo-description photo-other__description">
+            <h3 class="visually-hidden">Данные автора и комментарии</h3>
             <div class="photo-other__caption">
               <p class="photo-other__author">Левон</p>
               <p class="photo-other__box-caption-time photo-other__time">(5 часов назад)</p>
@@ -130,9 +135,9 @@
               </svg>
               <p class="photo-other__box-like-like-number photo-other__like-number">Нравится: 356</p>
             </div>
-          </div>
-        </div>
-        <div class="photo-other__photo">
+          </section>
+        </li>
+        <li class="photo-other__photo">
           <a class="photo-other__box-photo-img photo-other__img">
             <picture>
               <source type="image/webp" media="(min-width: 980px)" srcset="./img/drums-desk.webp 1x, ./img/drums-desk@2x.webp 2x">
@@ -143,7 +148,8 @@
               <img class="photo-other__box-photo-img photo-other__img" src="./img/drums-mob.jpg" srcset="./img/drums-mob@2x.jpg" width="280" height="180" loading="lazy" alt="Музыкальная_барабанная_установка">
             </picture>
           </a>
-          <div class="photo-other__box-photo-description photo-other__description">
+          <section class="photo-other__box-photo-description photo-other__description">
+            <h3 class="visually-hidden">Данные автора и комментарии</h3>
             <div class="photo-other__caption">
               <p class="photo-other__author">Антон</p>
               <p class="photo-other__box-caption-time photo-other__time">(12 часов назад)</p>
@@ -155,9 +161,9 @@
               </svg>
               <p class="photo-other__box-like-like-number photo-other__like-number">Нравится: 666</p>
             </div>
-          </div>
-        </div>
-        <div class="photo-other__photo">
+          </section>
+        </li>
+        <li class="photo-other__photo">
           <a class="photo-other__box-photo-img photo-other__img">
             <picture>
               <source type="image/webp" media="(min-width: 980px)" srcset="./img/glass-ceiling-desk.webp 1x, ./img/glass-ceiling-desk@2x.webp 2x">
@@ -168,7 +174,8 @@
               <img class="photo-other__box-photo-img photo-other__img" src="./img/glass-ceiling-mob.jpg" srcset="./img/glass-ceiling-mob@2x.jpg" width="280" height="180" loading="lazy" alt="Небо_сквозь_стеклянные_окна_крыши">
             </picture>
           </a>
-          <div class="photo-other__box-photo-description photo-other__description">
+          <section class="photo-other__box-photo-description photo-other__description">
+            <h3 class="visually-hidden">Данные автора и комментарии</h3>
             <div class="photo-other__caption">
               <p class="photo-other__author">Борис</p>
               <p class="photo-other__box-caption-time photo-other__time">(20 часов назад)</p>
@@ -180,9 +187,9 @@
               </svg>
               <p class="photo-other__box-like-like-number photo-other__like-number">Нравится: 215</p>
             </div>
-          </div>
-        </div>
-        <div class="photo-other__photo">
+          </section>
+        </li>
+        <li class="photo-other__photo">
           <a class="photo-other__box-photo-img photo-other__img">
             <picture>
               <source type="image/webp" media="(min-width: 980px)" srcset="./img/orange-tent-desk.webp 1x, ./img/orange-tent-desk@2x.webp 2x">
@@ -193,7 +200,8 @@
               <img class="photo-other__box-photo-img photo-other__img" src="./img/orange-tent-mob.jpg" srcset="./img/orange-tent-mob@2x.jpg" width="280" height="180" loading="lazy" alt="Бахчевый_рынок_под_оранжевым_навесом">
             </picture>
           </a>
-          <div class="photo-other__box-photo-description photo-other__description">
+          <section class="photo-other__box-photo-description photo-other__description">
+            <h3 class="visually-hidden">Данные автора и комментарии</h3>
             <div class="photo-other__caption">
               <p class="photo-other__author">Сергей</p>
               <p class="photo-other__box-caption-time photo-other__time">(25 часов назад)</p>
@@ -205,9 +213,9 @@
               </svg>
               <p class="photo-other__box-like-like-number photo-other__like-number">Нравится: 4</p>
             </div>
-          </div>
-        </div>
-        <div class="photo-other__photo">
+          </section>
+        </li>
+        <li class="photo-other__photo">
           <a class="photo-other__box-photo-img photo-other__img">
             <picture>
               <source type="image/webp" media="(min-width: 980px)" srcset="./img/legs-hillside-desk.webp 1x, ./img/legs-hillside-desk@2x.webp 2x">
@@ -218,7 +226,8 @@
               <img class="photo-other__box-photo-img photo-other__img" src="./img/legs-hillside-mob.jpg" srcset="./img/legs-hillside-mob@2x.jpg" width="280" height="180" loading="lazy" alt="Вид_на_горный_спуск,_сидя_на_краю_камня._Ноги_тоже_попали_в_кадр.">
             </picture>
           </a>
-          <div class="photo-other__box-photo-description photo-other__description">
+          <section class="photo-other__box-photo-description photo-other__description">
+            <h3 class="visually-hidden">Данные автора и комментарии</h3>
             <div class="photo-other__caption">
               <p class="photo-other__author">Максим</p>
               <p class="photo-other__box-caption-time photo-other__time">(40 часов назад)</p>
@@ -230,9 +239,9 @@
               </svg>
               <p class="photo-other__box-like-like-number photo-other__like-number">Нравится: 150</p>
             </div>
-          </div>
-        </div>
-        <div class="photo-other__photo">
+          </section>
+        </li>
+        <li class="photo-other__photo">
           <a class="photo-other__box-photo-img photo-other__img">
             <picture>
               <source type="image/webp" media="(min-width: 980px)" srcset="./img/sun-airplane-desk.webp 1x, ./img/sun-airplane-desk@2x.webp 2x">
@@ -243,7 +252,8 @@
               <img class="photo-other__box-photo-img photo-other__img" src="./img/sun-airplane-mob.jpg" srcset="./img/sun-airplane-mob@2x.jpg" width="280" height="180" loading="lazy" alt="Солнце_светит_из-за_крыла_летящего_самолёта">
             </picture>
           </a>
-          <div class="photo-other__box-photo-description photo-other__description">
+          <section class="photo-other__box-photo-description photo-other__description">
+            <h3 class="visually-hidden">Данные автора и комментарии</h3>
             <div class="photo-other__caption">
               <p class="photo-other__author">Надежда</p>
               <p class="photo-other__box-caption-time photo-other__time">(45 часов назад)</p>
@@ -255,9 +265,9 @@
               </svg>
               <p class="photo-other__box-like-like-number photo-other__like-number">Нравится: 2560</p>
             </div>
-          </div>
-        </div>
-      </div>
+          </section>
+        </li>
+      </ul>
       <form class="apload" id="apload-user-photo" method="get" action="https://echo.htmlacademy.ru/" target="apload-user-photo">
         <div class="apload__box-caption">
           <h2 class="visually-hidden">Загрузите фото, которое сняли вы.</h2>
@@ -265,7 +275,8 @@
           <p class="apload__speech">Выкладывайте все, что накопилось в телефоне!</p>
         </div>
         <div class="apload__box-content">
-          <div class="apload__box-content-user-content apload__user-content">
+          <section class="apload__box-content-user-content apload__user-content">
+            <h3 class="visually-hidden">Форма для загрузки и обработки фотографии</h3>
             <picture>
               <source type="image/webp" media="(min-width: 980px)" srcset="./img/snowy-road-desk.webp 1x, ./img/snowy-road-desk@2x.webp 2x">
               <source type="image/webp" media="(min-width: 640px)" srcset="./img/snowy-road-tabl.webp 1x, ./img/snowy-road-tabl@2x.webp 2x">
@@ -274,7 +285,8 @@
               <source media="(min-width: 640px)" srcset="./img/snowy-road-tabl.jpg 1x, ./img/snowy-road-tabl@2x.jpg 2x">
               <img class="apload__box-user-content-user-photo apload__user-photo" src="./img/snowy-road-mob.jpg" srcset="./img/snowy-road-mob@2x.jpg" width="280" height="374" id="user-photo" loading="lazy" alt="Утро._Поворот_заснеженной_дороги.">
             </picture>
-            <div class="range range--box">
+            <section class="range range--box">
+              <h4 class="visually-hidden">Обработка фотографии: кадрирование, насыщенность, контрастность</h4>
               <svg class="range__box-range-icon range__icon range__icon-crop" width="44" height="44" viewBox="0 0 44 44" fill="#D22856" xmlns="http://www.w3.org/2000/svg">
                 <path d="M32 28H36V12C36 10.9391 35.5786 9.92172 34.8284 9.17157C34.0783 8.42143 33.0609 8 32 8H16V12H32V28ZM12 32V0H8V8H0V12H8V32C8 33.0609 8.42143 34.0783 9.17157 34.8284C9.92172 35.5786 10.9391 36 12 36H32V44H36V36H44V32H12Z" />
               </svg>
@@ -289,12 +301,13 @@
                 <path d="M16 24.29C18.1536 24.1422 20.1708 23.1824 21.644 21.6046C23.1172 20.0268 23.9366 17.9486 23.9366 15.79C23.9366 13.6314 23.1172 11.5532 21.644 9.97538C20.1708 8.39759 18.1536 7.43782 16 7.29" />
               </svg>
               <input class="range__box-range-toggle range__toggle range__toggle-contrast" type="range" name="contrast" min="0" max="100" step="1" value="50">
-            </div>
-            <div class="apload__box-user-content-buttons apload__buttons">
+            </section>
+            <section class="apload__box-user-content-buttons apload__buttons">
+              <h4 class="visually-hidden">Кнопка для отправки фото пользователя</h4>
               <button class="apload__box-buttons-button apload__button apload__button-post apload__button-post--box" type="submit" aria-label="Отправить изображение с настроенными фильтрами">Запостить</button>
               <button class="apload__box-buttons-button apload__button apload__button-cancel apload__button-cancel--box" type="reset" aria-label="Обнулить фильтры">Отмена</button>
-            </div>
-          </div>
+            </section>
+          </section>
         </div>
       </form>
     </main>

@@ -9,6 +9,7 @@
 .photo-other--box {
   width: 280px;
   margin: 0 auto;
+  padding: 0;
 
   @media (min-width: @tablet-width) {
     width: 620px;
@@ -20,6 +21,7 @@
 }
 
 .photo-other__photo {
+  .item-style-none();
   display: flex;
   flex-direction: column;
   width: 240px;
@@ -57,14 +59,14 @@
 
   @media (min-width: @tablet-width) {
     width: 241px;
-    height: 108px;
+    min-height: 108px;
     margin: 0 0 22px;
     padding: 22px 30px 23px;
   }
 
   @media (min-width: @desktop-min-width) { //@desktop-width
     width: 246px;
-    height: 111px;
+    min-height: 111px;
     margin: 0 0 54px;
     padding: 25px 27px 20px;
   }

@@ -53,8 +53,7 @@ exports.server = server;
 
 const watcher = () => {
   gulp.watch("source/less/**/*.less", gulp.series("styles"));
-  gulp.watch("source/js/scripts.js", gulp.series("scripts")); // не отслеживает scripts.js
-  //gulp.watch("source/js/scripts.js").on("change", sync.reload); // не отслеживает scripts.js
+  gulp.watch("source/js/scripts.js", gulp.series("scripts"));
   gulp.watch("source/*.html").on("change", sync.reload);
 }
 
@@ -82,7 +81,7 @@ const scripts = () => {
 
 exports.scripts = scripts;
 
-// Imeges optimize copy
+// Imeges optimize
 
 const optimizeImg = () => {
   return gulp.src("source/img/**/*.{jpg,png,svg}")
@@ -92,12 +91,6 @@ const optimizeImg = () => {
 
 exports.optimizeImg = optimizeImg;
 
-const copyImg = () => {
-  return gulp.src("source/img/**/*.{jpg,png,svg}")
-  .pipe(gulp.dest("build/img"));
-}
-
-exports.copyImg = copyImg;
 
 // Webp
 
@@ -122,7 +115,7 @@ const sprite = () => {
 
 exports.sprite = sprite;
 
-// Copy others
+// Copy
 
 const copy = (done) => {
   gulp.src([
@@ -137,6 +130,20 @@ const copy = (done) => {
 }
 
 exports.copy = copy;
+
+const copyImg = () => {
+  return gulp.src("source/img/**/*.{jpg,png,svg}")
+  .pipe(gulp.dest("build/img"));
+}
+
+exports.copyImg = copyImg;
+
+const copyHtml = () => {
+  return gulp.src("source/*.html")
+  .pipe(gulp.dest("build"));
+}
+
+exports.copyHtml = copyHtml;
 
 // Clean build
 
@@ -159,10 +166,6 @@ const build = gulp.series(
     scripts,
     sprite,
     webpImg
-  ),
-  gulp.series(
-    server,
-    watcher
   )
 );
 
@@ -174,10 +177,10 @@ exports.default = gulp.series(
   cleanBuild,
   copyImg,
   gulp.parallel(
-    styles,
-    html,
-    scripts,
     copy,
+    copyHtml,
+    styles,
+    scripts,
     sprite,
     webpImg
   ),

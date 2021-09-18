@@ -14,7 +14,8 @@
   <body class="body">
     <header class="header">
       <div class="header__box-header">
-        <div class="header__box-menu header__menu header__menu-no-js">
+        <section class="header__box-menu header__menu header__menu-no-js">
+          <h2 class="visually-hidden">Навигация по сайту</h2>
           <a class="header__logo" href="#" aria-label="Логотип компании Pink">
             <svg class="header__logo-mob header__logo-hover" width="74" height="23" viewBox="0 0 74 23" fill="white" xmlns="http://www.w3.org/2000/svg">
               <path d="M0.00496827 1.54857C0.00487772 1.21254 0.135804 0.889818 0.369742 0.649431C0.60368 0.409043 0.922049 0.27008 1.25676 0.262266H8.39001C13.4469 0.262266 16.7751 2.9645 16.7751 7.39179V7.45162C16.7751 12.2977 12.7415 14.8105 7.97274 14.8105H2.53836V21.611C2.55394 21.7874 2.53277 21.9651 2.47619 22.1329C2.41961 22.3006 2.32887 22.4547 2.20973 22.5854C2.09058 22.716 1.94565 22.8204 1.78416 22.8918C1.62266 22.9631 1.44812 23 1.27166 23C1.0952 23 0.920671 22.9631 0.759173 22.8918C0.597674 22.8204 0.452744 22.716 0.333602 22.5854C0.21446 22.4547 0.123708 22.3006 0.0671295 22.1329C0.0105515 21.9651 -0.0106138 21.7874 0.00496827 21.611V1.54857ZM8.07209 12.5171C11.7778 12.5171 14.2119 10.5228 14.2119 7.53139V7.47156C14.2119 4.26078 11.8175 2.59556 8.25092 2.59556H2.58804V12.4772L8.07209 12.5171Z"/>
@@ -51,7 +52,7 @@
               <path d="M2.15131 0L0 2.15131L20.8487 23L23 20.8487L2.15131 0Z" />
             </svg>
           </button>
-        </div>
+        </section>
         <ul class="header__navigation-list header__navigation-list-no-js">
           <li class="header__navigation-item header__navigation-item--current">
             <a class="header__box-navigation-item header__navigation-page" href="#">Главная</a>
@@ -69,11 +70,12 @@
       </div>
     </header>
     <main>
-      <h1 class="visually-hidden">Pink - это мобильное приложение для раскрашивания серых будней в розоавй цвет</h1>
-      <div class="caption">
+      <section class="caption">
+        <h1 class="visually-hidden">Pink - это мобильное приложение для раскрашивания серых будней в розоавй цвет</h1>
         <div class="caption__box-content caption__content">
           <h2 class="caption__box-content-slogan caption__slogan">Взгляните на жизнь иначе!</h2>
-          <div class="caption__box-content-links caption__links">
+          <section class="caption__box-content-links caption__links">
+            <h3 class="visually-hidden">Ссылки для скачивания приложений на разные операционные системы</h3>
             <a class="caption__box-links-link caption__link" href="https://www.apple.com">Скачать приложение</a>
             <ul class="caption__icon-list">
               <li class="caption__icon-item">
@@ -99,7 +101,7 @@
               </li>
             </ul>
             <p class="caption__box-links-description caption__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-          </div>
+          </section>
           <picture>
             <source type="image/webp" media="(min-width: 980px)" srcset="./img/hand-phone-desk.webp 1x, ./img/hand-phone-desk@2x.webp 2x">
             <source type="image/webp" media="(min-width: 640px)" srcset="./img/hand-phone-tabl.webp 1x, ./img/hand-phone-tabl@2x.webp 2x">
@@ -109,31 +111,32 @@
             <img class="caption__box-content-hand-phone caption__hand-phone" src="./img/hand-phone-mob.png" srcset="./img/hand-phone-mob@2x.png 2x" width="320" height="286" alt="Мобильный телефон в вашей руке">
           </picture>
         </div>
-      </div>
-      <div class="offers offers--box">
+      </section>
+      <section class="offers offers--box">
+        <h3 class="visually-hidden">Предложения для пользователей</h3>
         <p class="offers__box-offers offers__first">Устали от серости мегаполиса?</p>
         <p class="offers__box-offers offers__second">Нам есть, что вам предложить!</p>
-      </div>
-      <div class="effects effects--box">
+      </section>
+      <section class="effects effects--box">
         <ul class="effects__box-effects-list effects__list">
-          <div class="effects__box-underlay">
-            <li class="effects__box-list-item effects__item">
+          <li class="effects__box-underlay">
+            <div class="effects__box-list-item effects__item">
               <h3 class="effects__box-item-caption effects__caption">Поднимает настроение</h3>
               <p class="effects__box-item-description effects__description">Приложение позволит вам победить осеннюю&nbsp;хандру и депрессию буквально&nbsp;в несколько кликов!</p>
-            </li>
-          </div>
-          <div class="effects__box-underlay">
-            <li class="effects__box-list-item effects__item">
+            </div>
+          </li>
+          <li class="effects__box-underlay">
+            <div class="effects__box-list-item effects__item">
               <h3 class="effects__box-item-caption effects__caption">Меняет мир вокруг</h3>
               <p class="effects__box-item-description effects__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить&nbsp;эффект</p>
-            </li>
-          </div>
-          <div class="effects__box-underlay">
-            <li class="effects__box-list-item effects__item">
+            </div>
+          </li>
+          <li class="effects__box-underlay">
+            <div class="effects__box-list-item effects__item">
               <h3 class="effects__box-item-caption effects__caption">Заводит новых друзей</h3>
               <p class="effects__box-item-description effects__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-            </li>
-          </div>
+            </div>
+          </li>
         </ul>
         <ul class="effects__box-effects-img-list effects__img-list">
           <li class="effects__box-img-list-img-item effects__img-item effects__img-1">
@@ -167,22 +170,24 @@
             </picture>
           </li>
         </ul>
-      </div>
-      <div class="researching researching--box">
+      </section>
+      <section class="researching researching--box">
+        <h2 class="visually-hidden">Результаты исседований</h2>
         <div class="researching__box-content researching__content">
           <svg class="researching__box-content-img researching__img" width="238" height="276" viewBox="0 0 238 276" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M211.314 81.6277L215.587 77.3408C221.752 71.1663 222.878 62.1925 218.086 57.4017C213.294 52.6109 204.334 53.7227 198.176 59.8971L193.871 64.208C176.746 50.2779 156.074 41.4187 134.187 38.6304V30.9603H140.305C149.019 30.9603 156.151 23.994 156.151 15.4842C156.151 6.97427 149.019 0 140.305 0H97.7208C89.0075 0 81.8755 6.96627 81.8755 15.4842C81.8755 24.002 89.0075 30.9603 97.7208 30.9603H103.839V38.6304C77.6967 41.9933 53.4093 53.9522 34.7872 72.6308C16.1652 91.3093 4.26218 115.651 0.945904 141.835C-2.37038 168.02 3.08771 194.566 16.4638 217.309C29.8399 240.052 50.377 257.704 74.8528 267.496C99.3286 277.288 126.358 278.665 151.7 271.412C177.042 264.16 199.263 248.687 214.875 227.421C230.488 206.156 238.609 180.302 237.964 153.915C237.32 127.529 227.946 102.103 211.314 81.6277ZM119.013 244.947C101.61 244.947 84.5984 239.779 70.1286 230.097C55.6589 220.414 44.3813 206.652 37.7219 190.551C31.0625 174.45 29.3205 156.733 32.7162 139.64C36.1119 122.547 44.4927 106.847 56.7989 94.5241C69.105 82.2015 84.7837 73.81 101.852 70.411C118.921 67.012 136.613 68.7581 152.69 75.4285C168.768 82.0989 182.509 93.3939 192.176 107.885C201.844 122.377 207.003 139.413 207.001 156.841C206.999 180.209 197.728 202.619 181.227 219.142C164.726 235.665 142.348 244.947 119.013 244.947Z" fill="#DEDEDE"/>
             <circle cx="119" cy="157" r="93" stroke="#D22856" stroke-width="16"/>
             <path d="M115.906 191H68V180.922L85.2031 163.531C90.2969 158.312 93.625 154.703 95.1875 152.703C96.75 150.672 97.875 148.797 98.5625 147.078C99.25 145.359 99.5938 143.578 99.5938 141.734C99.5938 138.984 98.8281 136.938 97.2969 135.594C95.7969 134.25 93.7812 133.578 91.25 133.578C88.5938 133.578 86.0156 134.188 83.5156 135.406C81.0156 136.625 78.4062 138.359 75.6875 140.609L67.8125 131.281C71.1875 128.406 73.9844 126.375 76.2031 125.188C78.4219 124 80.8438 123.094 83.4688 122.469C86.0938 121.812 89.0312 121.484 92.2812 121.484C96.5625 121.484 100.344 122.266 103.625 123.828C106.906 125.391 109.453 127.578 111.266 130.391C113.078 133.203 113.984 136.422 113.984 140.047C113.984 143.203 113.422 146.172 112.297 148.953C111.203 151.703 109.484 154.531 107.141 157.438C104.828 160.344 100.734 164.484 94.8594 169.859L86.0469 178.156V178.812H115.906V191ZM172.297 176.797H164.047V191H149.891V176.797H120.641V166.719L150.688 122.469H164.047V165.547H172.297V176.797ZM149.891 165.547V153.922C149.891 151.984 149.969 149.172 150.125 145.484C150.281 141.797 150.406 139.656 150.5 139.062H150.125C148.969 141.625 147.578 144.125 145.953 146.562L133.391 165.547H149.891Z" fill="#D22856"/>
           </svg>
-          <div class="researching__box-description researching__description">
+          <section class="researching__box-description researching__description">
             <h3 class="researching__box-description-caption researching__caption">Эффект на&nbsp;24&nbsp;часа!</h3>
             <p class="researching__box-description-text researching__text">Британские ученые провели исследования и доказали, что&nbsp;положительный эффект от&nbsp;использования приложения длится целые&nbsp;сутки!</p>
             <a class="researching__link" href="#" aria-label="Переход на страницу британского исследования">Узнать больше об исследовании</a>
-          </div>
+          </section>
         </div>
-      </div>
-      <div class="reviews reviews--box">
+      </section>
+      <section class="reviews reviews--box">
+        <h2 class="visually-hidden">Слайдер с отзывами</h2>
         <svg class="reviews__quotes" width="79" height="63" viewBox="0 0 79 63" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M35.1468 6.97257L30.8388 0C28.3886 1.48142 0 12.0588 0 39.1293C0 46.2698 0.341426 63 18.9793 63C30.2162 63 32.9778 52.8473 32.9778 49.5783C32.9778 27.8508 11.5081 35.5838 11.5081 35.5838C11.5081 17.7771 31.3911 9.06631 35.1468 6.97257Z" fill="#EFEFEF"/>
           <path d="M79 6.97257L74.7322 0C72.302 1.48142 43.8833 12.0588 43.8833 39.1293C43.8833 46.2698 44.2247 63 62.8726 63C74.0995 63 76.8611 52.8473 76.8611 49.5783C76.8611 27.8508 55.3914 35.5838 55.3914 35.5838C55.3914 17.7771 75.3146 9.06631 79 6.97257Z" fill="#EFEFEF"/>
@@ -190,39 +195,41 @@
         <svg class="reviews__box-arrow-slider reviews__arrow-slider reviews__arrow-slider-left" width="22" height="41" viewBox="0 0 22 41" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path opacity="0.3" d="M2.0413 20.5035L21.7483 1.4144C21.8281 1.3379 21.8914 1.24683 21.9346 1.14646C21.9778 1.04608 22 0.938398 22 0.829635C22 0.720871 21.9778 0.613187 21.9346 0.512814C21.8914 0.41244 21.8281 0.321369 21.7483 0.24487C21.6686 0.167255 21.5738 0.105671 21.4694 0.0636507C21.365 0.0216304 21.2532 0 21.1401 0C21.0271 0 20.9153 0.0216304 20.8109 0.0636507C20.7065 0.105671 20.6117 0.167255 20.532 0.24487L0.252535 19.9088C0.17249 19.9862 0.108978 20.0781 0.0656429 20.1793C0.0223074 20.2805 0 20.389 0 20.4985C0 20.6081 0.0223074 20.7166 0.0656429 20.8178C0.108978 20.919 0.17249 21.0109 0.252535 21.0883L20.532 40.7621C20.6967 40.9157 20.9167 41.001 21.1453 41C21.3139 40.9985 21.4783 40.9488 21.6181 40.8572C21.7578 40.7656 21.8666 40.6362 21.9309 40.485C21.9952 40.3339 22.0122 40.1677 21.9797 40.0072C21.9473 39.8467 21.8668 39.6991 21.7483 39.5827L2.0413 20.5035Z" fill="#283645"/>
         </svg>
-        <div class="reviews__content">
+        <section class="reviews__content">
+          <h3 class="visually-hidden">Отзывы пользователей приложения</h3>
           <div class="reviews__box-content reviews__slide reviews__slide--current">
-            <div class="reviews__author">
-              <h3 class="reviews__box-author-name reviews__author-name">Николай Петров</h3>
+            <section class="reviews__author">
+              <h4 class="reviews__box-author-name reviews__author-name">Николай Петров</h4>
               <p class="reviews__box-author-about reviews__author-about">25 лет, водитель трамвая</p>
-            </div>
+            </section>
             <p class="reviews__box-content-text reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со&nbsp;своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
           </div>
           <div class="reviews__box-content reviews__slide reviews__slide-2">
-            <div class="reviews__author">
-              <h3 class="reviews__box-author-name reviews__author-name">Николай Петров</h3>
+            <section class="reviews__author">
+              <h4 class="reviews__box-author-name reviews__author-name">Николай Петров</h4>
               <p class="reviews__box-author-about reviews__author-about">25 лет, водитель трамвая</p>
-            </div>
+            </section>
             <p class="reviews__box-content-text reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со&nbsp;своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
           </div>
           <div class="reviews__box-content reviews__slide reviews__slide-3">
-            <div class="reviews__author">
-              <h3 class="reviews__box-author-name reviews__author-name">Николай Петров</h3>
+            <section class="reviews__author">
+              <h4 class="reviews__box-author-name reviews__author-name">Николай Петров</h4>
               <p class="reviews__box-author-about reviews__author-about">25 лет, водитель трамвая</p>
-            </div>
+            </section>
             <p class="reviews__box-content-text reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со&nbsp;своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
           </div>
-          <div class="reviews__box-content-slider slide-control reviews__slider">
+          <section class="reviews__box-content-slider slide-control reviews__slider">
+            <h3 class="visually-hidden">Переключение отзывов</h3>
             <button class="slide-control__button slide-control__button--current reviews__slider-button reviews__slider-button--current" type="button" aria-label="Текущий слайд"></button>
             <button class="slide-control__button reviews__slider-button" type="button" aria-label="Второй слайд"></button>
             <button class="slide-control__button reviews__slider-button" type="button" aria-label="Третий слайд"></button>
-          </div>
-        </div>
+          </section>
+        </section>
         <svg class="reviews__box-arrow-slider reviews__arrow-slider reviews__arrow-slider-right" width="22" height="41" viewBox="0 0 22 41" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path opacity="0.3" d="M19.9587 20.4965L0.251671 39.5856C0.171938 39.6621 0.108643 39.7532 0.065443 39.8535C0.0222435 39.9539 0 40.0616 0 40.1704C0 40.2791 0.0222435 40.3868 0.065443 40.4872C0.108643 40.5876 0.171938 40.6786 0.251671 40.7551C0.33144 40.8327 0.426224 40.8943 0.530588 40.9363C0.634953 40.9784 0.746847 41 0.859852 41C0.972857 41 1.08475 40.9784 1.18911 40.9363C1.29348 40.8943 1.38826 40.8327 1.46803 40.7551L21.7475 21.0912C21.8275 21.0138 21.891 20.9219 21.9344 20.8207C21.9777 20.7195 22 20.611 22 20.5015C22 20.3919 21.9777 20.2834 21.9344 20.1822C21.891 20.081 21.8275 19.9891 21.7475 19.9117L1.46803 0.237877C1.30326 0.0842934 1.08329 -0.00102615 0.85474 7.62939e-06C0.6861 0.00154114 0.52166 0.0511971 0.381939 0.14278C0.24222 0.234364 0.133411 0.363811 0.069088 0.51498C0.00476646 0.666149 -0.0122204 0.83234 0.0202503 0.992809C0.052721 1.15328 0.133209 1.30093 0.251671 1.41732L19.9587 20.4965Z" fill="#283645"/>
         </svg>
-      </div>
-      <div class="cost cost--box">
+      </section>
+      <section class="cost cost--box">
         <h2 class="visually-hidden">Тарифы и перечень услуг, которые входят в тариф</h2>
         <table class="cost__box-table cost__table">
           <tr class="cost__tarif-list">
@@ -360,40 +367,43 @@
             </td>
           </tr>
         </table>
-        <div class="cost__box-slider slide-control cost__slider">
+        <section class="cost__box-slider slide-control cost__slider">
+          <h3 class="visually-hidden">Перекючение тарифов</h3>
           <button class="slide-control__button cost__slider-button" type="button" aria-label="Первый слайд"></button>
           <button class="slide-control__button  slide-control__button--current cost__slider-button cost__slider-button--current" type="button" aria-label="Текущий слайд"></button>
           <button class="slide-control__button cost__slider-button" type="button" aria-label="Третий слайд"></button>
-        </div>
-      </div>
-      <div class="contacts">
+        </section>
+      </section>
+      <section class="contacts">
+        <h2 class="visually-hidden">Связь с команией</h2>
         <div class="contacts__caption">
           <p class="contacts__caption-text">Остались вопросы?</p>
           <p class="contacts__caption-text">Свяжитесь с нами!</p>
         </div>
         <div class="contacts__box-categories contacts__categories">
-          <div class="contacts__box-category contacts__category contacts__tel">
-            <p class="contacts__box-category-speech contacts__speech">Звоните:</p>
-            <a class="contacts__info" href="tel:+78125556666" aria-label="Номер телефона компании Pink +78125556666">+7 (812) 555-66-66</a>
-          </div>
-          <div class="contacts__box-category contacts__category contacts__email">
-            <p class="contacts__box-category-speech contacts__speech">Пишите:</p>
+          <section class="contacts__box-category contacts__category contacts__tel">
+            <h3 class="contacts__box-category-speech contacts__speech contacts__speech--phone">Звоните:</h3>
+            <a class="contacts__info contacts__info--phone" href="tel:+78125556666" aria-label="Номер телефона компании Pink +78125556666">+7 (812) 555-66-66</a>
+          </section>
+          <section class="contacts__box-category contacts__category contacts__email">
+            <h3 class="contacts__box-category-speech contacts__speech contacts__speech--email">Пишите:</h3>
             <a class="contacts__info contacts__info--email" href="mailto:mail@htmlacademy.ru" aria-label="Элекртонная почта компании Pink mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </div>
-          <div class="contacts__box-category contacts__category contacts__address contacts__box-categories-address">
-            <p class="contacts__box-category-speech contacts__speech contacts__speech--address">Приезжайте в гости:</p>
-            <a class="contacts__info" href="#" aria-label="Почтовый адресс компании Pink г. Санкт-Петербург, ул. Большая Конюшенная, 19/8">ул. Большая Конюшенная, 19/8</a>
-          </div>
+          </section>
+          <section class="contacts__box-category contacts__category contacts__address contacts__box-categories-address">
+            <h3 class="contacts__box-category-speech contacts__speech contacts__speech--address">Приезжайте в гости:</h3>
+            <a class="contacts__info contacts__info--address" href="#" aria-label="Почтовый адресс компании Pink г. Санкт-Петербург, ул. Большая Конюшенная, 19/8">ул. Большая Конюшенная, 19/8</a>
+          </section>
         </div>
-        <div class="contacts__box-background contacts__background">
+        <section class="contacts__box-background contacts__background">
+          <h3 class="visually-hidden">Адрес компании на карте</h3>
           <div class="contacts__map-marker"></div>
           <div class="contacts__map">
             <iframe class="contacts__map-online" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533273!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2sua!4v1615991844580!5m2!1sen!2sua" width="320" height="200" style="border:0;" allowfullscreen="" loading="lazy" aria-label="Карта Санкт-Петербурга"></iframe>
           </div>
-        </div>
-      </div>
+        </section>
+      </section>
     </main>
-    <footer class="footer footer--box">
+    <footer class="footer footer--box footer--box-index">
       <h2 class="visually-hidden">Сайт разработан</h2>
       <svg class="footer__box-footer-logo footer__logo" width="145" height="40" viewBox="0 0 145 40" fill="#283645" xmlns="http://www.w3.org/2000/svg">
         <path d="M71.005 18.5486C71.0049 18.2125 71.1358 17.8898 71.3697 17.6494C71.6037 17.409 71.922 17.2701 72.2568 17.2623H79.39C84.4469 17.2623 87.7751 19.9645 87.7751 24.3918V24.4516C87.7751 29.2977 83.7415 31.8105 78.9727 31.8105H73.5384V38.611C73.5539 38.7874 73.5328 38.9651 73.4762 39.1329C73.4196 39.3006 73.3289 39.4547 73.2097 39.5854C73.0906 39.716 72.9457 39.8204 72.7842 39.8918C72.6227 39.9631 72.4481 40 72.2717 40C72.0952 40 71.9207 39.9631 71.7592 39.8918C71.5977 39.8204 71.4527 39.716 71.3336 39.5854C71.2145 39.4547 71.1237 39.3006 71.0671 39.1329C71.0106 38.9651 70.9894 38.7874 71.005 38.611V18.5486ZM79.0721 29.5171C82.7778 29.5171 85.2119 27.5228 85.2119 24.5314V24.4716C85.2119 21.2608 82.8175 19.5956 79.2509 19.5956H73.588V29.4772L79.0721 29.5171Z" />

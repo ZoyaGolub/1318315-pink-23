@@ -23,7 +23,7 @@
 }
 
 .header__box-menu {
-  padding: 23px 20px;
+  padding: 25px 20px 20px;
 
   @media (min-width: @desktop-min-width) {//@desktop-width
     padding: 0;
@@ -57,15 +57,18 @@
 .header__logo {
   width: 74px;
   height: 23px;
+  margin-top: -4px;
 
   @media (min-width: @tablet-width) {
     width: 145px;
     height: 40px;
+    margin-top: -20px;
   }
 
   @media (min-width: @desktop-min-width) {//@desktop-width
     width: 147px;
     height: 40px;
+    margin-top: 0;
   }
 }
 
@@ -125,6 +128,7 @@
   background-repeat: no-repeat;
   background-color: transparent;
   border: none;
+  padding: 0;
 
   @media (min-width: @desktop-min-width) {//@desktop-width
     display: none;
@@ -221,6 +225,19 @@
     border-bottom: 2px solid @white;
     padding-bottom: 7px;
     margin-bottom: 14px;
+
+    &:focus {
+      border-bottom: 2px solid @red;
+    }
+
+    &:hover {
+      border-bottom: 2px solid @red;
+    }
+
+    &:active {
+      border-bottom: 2px solid @white;
+      opacity: 0.3;
+    }
   }
 }
 

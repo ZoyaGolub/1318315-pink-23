@@ -152,15 +152,6 @@
   }
 }
 
-.form__question {
-  color: @red;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 30px;
-  text-transform: uppercase;
-  text-align: center;
-}
-
 .form__box-question {
   margin: -28px auto;
   padding: 34px 20px 0;
@@ -171,6 +162,27 @@
 
   @media (min-width: @desktop-min-width) { //@desktop-width
     padding: 0 24px 0;
+  }
+}
+
+.form__box-question--legend {
+  @media (max-width: @mobail-width-only) {
+    padding: 40px 20px 16px;
+  }
+}
+
+.form__question {
+  color: @red;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.form__question--legend {
+  @media (max-width: @mobail-width-only) {
+    line-height: 19px;
   }
 }
 
@@ -450,8 +462,8 @@
   margin-top: 52px;
 
   @media (min-width: @desktop-min-width) { //@desktop-width
-    margin: 37px -32px 14px 11px;
-    width: 330px;
+    margin: 37px -7px 14px 12px;
+    width: 300px;
   }
 }
 
@@ -532,11 +544,19 @@
   height: 168px;
   border: 2px solid @grey-dark;
   border-radius: 1px;
-  padding: 15px 22px 15px 20px;
+  padding: 15px 20px 15px 18px;
   margin-top: 25px;
 
+  &::placeholder {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
   @media (min-width: @tablet-width) {
-    width: 91%;
+    width: 92%;
     height: 160px;
     margin-top: 19px;
   }
@@ -564,12 +584,12 @@
   width: 280px;
 
   @media (min-width: @tablet-width) {
-    margin: 0 auto;
+    margin: -3px auto 0;
     width: 620px;
   }
 
   @media (min-width: @desktop-min-width) { //@desktop-width
-    margin: 69px auto 0;
+    margin: 67px auto 0;
     width: 940px;
   }
 }
@@ -588,7 +608,8 @@
 
 .form__button-send--box {
   width: 276px;
-  height: 59px;
+  //height: 59px;
+  padding: 14px 10px;
   background: @green;
   border: 2px solid @green;
   border-radius: 1px;
@@ -632,15 +653,15 @@
 
 .form__footnote--box {
   @media (max-width: @mobail-width-only) {
-    margin: 38px auto 19px;
+    margin: 35px auto 22px;
   }
 
   @media (min-width: @tablet-width) {
-    width: 182px;
+    width: 185px;
   }
 
   @media (min-width: @desktop-min-width) { //@desktop-width
-    width: 314px;
+    width: 316px;
   }
 }
 
