@@ -54,9 +54,12 @@
 }
 
 .caption__box-content-slogan {
-  width: 87%;
+  max-width: 87%;
   padding: 90px 20px 28px;
   margin: 0 auto;
+  max-height: 58px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
   @media (min-width: @tablet-width) {
     position: absolute;
@@ -64,16 +67,17 @@
     width: 230px;
     margin: 0 0 0 20px;
     z-index: 1;
+    max-width: 275px;
+    max-height: 110px;
   }
 
-  // @media (min-width: @deskto-min-width) {
-  //   padding: 99px 0 40px 20px;
-  //   margin-top: -7px;
-  // }
-
-  @media (min-width: @desktop-width) { //@desktop-width
-    padding: 99px 0 40px 30px;
+  @media (min-width: @desktop-min-width) { //@desktop-width
+    padding: 99px 0 40px 20px;
     margin-top: -7px;
+    width: 258px;
+    height: 220px;
+    max-width: 475px;
+    max-height: 180px;
   }
 }
 
@@ -132,22 +136,26 @@
 .caption__box-links-link {
   width: 280px;
   //height: 55px;
-  border: 3px solid @white;
+  border: 3px solid transparent;
   box-sizing: border-box;
   border-radius: 29px;
-  padding: 14px 35px;
+  padding: 17px 35px;
+  max-width: 281px;
+  max-height: 56px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
   @media (min-width: @tablet-width) {
     width: 300px;
+    border: 3px solid @white;
     padding: 14px 45px;
+    max-width: 301px;
   }
 
-  @media (min-width: @desktop-min-width) {
-    padding: 14px 20px;
-  }
-
-  @media (min-width: @desktop-width) { //@desktop-width
+  @media (min-width: @desktop-min-width) { //@desktop-width
     padding: 14px 27px;
+    margin-top: -45px;
+    max-height: 54px;
   }
 
   &:focus {
@@ -186,10 +194,16 @@
   height: 56px;
   margin: 33px auto 19px;
   padding: 0 20px;
+  max-width: 210px;
+  max-height: 58px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
   @media (min-width: @tablet-width) {
     margin: 46px auto 32px;
     padding: 0;
+    max-width: 310px;
+    max-height: 80px;
   }
 
   @media (min-width: @desktop-min-width) { //@desktop-width
@@ -204,10 +218,15 @@
 .caption__box-links-description {
   margin: 0 auto 30px;
   width: 270px;
+  max-width: 271px;
+  max-height: 48px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 35px;
     width: 300px;
+    max-width: 301px;
   }
 }
 
